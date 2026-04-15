@@ -81,8 +81,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --primary: #e3b175;
-  --primary-color: #161311;
+  --primary: #f89a1c;
+  --primary-color: #f89a1c;
+  --secondary-color: #2b2b2b;
 }
 
 .dark {

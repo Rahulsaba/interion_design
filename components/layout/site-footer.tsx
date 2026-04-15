@@ -45,12 +45,12 @@ const socialIcons = [
 
 export default function SiteFooter() {
   return (
-    <footer className="mt-auto bg-[#0b7f84] text-white">
+    <footer className="mt-auto bg-[var(--secondary-color)] text-white">
       <div className="mx-auto max-w-[1200px] px-4 pb-9 pt-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h2 className="text-[44px] font-extrabold leading-none tracking-tight">
-              <span className="text-[#f89a1c]">cons</span>tux
+              <span className="text-[var(--primary-color)]">cons</span>tux
             </h2>
             <p className="mt-5 max-w-[340px] text-[17px] leading-8 text-white/90">
               We are many variations of passages available but the majority have
@@ -61,7 +61,7 @@ export default function SiteFooter() {
             <h3 className="mt-8 text-[28px] font-bold">Subscribe Our Newsletter</h3>
             <div className="mt-4 flex max-w-[420px] items-center rounded-full border border-white/20 p-1">
               <div className="flex flex-1 items-center gap-2 pl-4">
-                <i className="fa-regular fa-envelope text-[#f89a1c]" />
+                <i className="fa-regular fa-envelope text-[var(--primary-color)]" />
                 <Input
                   type="email"
                   placeholder="Your Email"
@@ -70,7 +70,7 @@ export default function SiteFooter() {
               </div>
               <button
                 type="button"
-                className="rounded-full bg-[#f89a1c] px-5 py-2 text-[14px] font-bold text-white transition hover:bg-[#e18817]"
+                className="rounded-full bg-[var(--primary-color)] px-5 py-2 text-[14px] font-bold text-white transition hover:bg-[#e18817]"
               >
                 Subscribe
                 <i className="fa-solid fa-paper-plane ml-1 text-[12px]" />
@@ -80,7 +80,7 @@ export default function SiteFooter() {
 
           <div>
             <h3 className="text-[34px] font-extrabold">Company</h3>
-            <div className="mb-5 mt-2 h-[3px] w-7 bg-[#f89a1c]" />
+            <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-3 text-[18px]">
               {companyLinks.map((item) => (
                 <li key={item} className="text-white/95">
@@ -92,7 +92,7 @@ export default function SiteFooter() {
 
           <div>
             <h3 className="text-[34px] font-extrabold">Services</h3>
-            <div className="mb-5 mt-2 h-[3px] w-7 bg-[#f89a1c]" />
+            <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-3 text-[18px]">
               {serviceLinks.map((item) => (
                 <li key={item} className="text-white/95">
@@ -104,11 +104,11 @@ export default function SiteFooter() {
 
           <div>
             <h3 className="text-[34px] font-extrabold">Get In Touch</h3>
-            <div className="mb-5 mt-2 h-[3px] w-7 bg-[#f89a1c]" />
+            <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-5">
               {contactItems.map((item) => (
                 <li key={item.title} className="flex items-start gap-3">
-                  <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f89a1c] text-white">
+                  <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
                     <i className={item.icon} />
                   </span>
                   <div>
@@ -123,7 +123,8 @@ export default function SiteFooter() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/20 pt-6 md:flex-row">
           <p className="text-[17px] text-white/90">
-            &copy; Copyright 2026 <span className="text-[#f89a1c]">Constux</span>{" "}
+            &copy; Copyright 2026{" "}
+            <span className="text-[var(--primary-color)]">Constux</span>{" "}
             All Rights Reserved.
           </p>
 
@@ -132,14 +133,14 @@ export default function SiteFooter() {
               <button
                 key={icon}
                 type="button"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0b7f84] transition hover:bg-[#f89a1c] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--secondary-color)] transition hover:bg-[var(--primary-color)] hover:text-white"
               >
                 <i className={`fa-brands ${icon}`} />
               </button>
             ))}
             <button
               type="button"
-              className="ml-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#f89a1c] text-white"
+              className="ml-2 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] text-white"
               aria-label="Back to top"
             >
               <i className="fa-solid fa-arrow-up" />

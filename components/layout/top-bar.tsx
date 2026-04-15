@@ -25,7 +25,7 @@ const socialIcons = [
 
 export default function TopBar() {
   return (
-    <div className="bg-[#0f8f96] text-white">
+    <div className="bg-[var(--secondary-color)] text-white">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-2">
         <ul className="hidden items-center gap-8 lg:flex">
           {leftInfo.map((item) => (
@@ -42,16 +42,8 @@ export default function TopBar() {
         </ul>
 
         <div className="hidden h-12 items-center bg-[#f7901d] px-8 lg:flex [clip-path:polygon(6%_0,100%_0,94%_100%,0_100%)]">
-          <div className="flex items-center gap-4 text-[14px]">
-            <button type="button" className="font-medium hover:text-black/70">
-              <i className="fa-solid fa-arrow-right-to-bracket mr-1" />
-              Login
-            </button>
-            <button type="button" className="font-medium hover:text-black/70">
-              <i className="fa-solid fa-globe mr-1" />
-              Eng
-            </button>
-            <span className="font-medium">Follow Us:</span>
+          <div className="flex items-center gap-3">
+            <span className="text-[13px] font-medium">Follow Us:</span>
             <ul className="flex items-center gap-2">
               {socialIcons.map((icon) => (
                 <li key={icon}>
