@@ -38,7 +38,7 @@ export default function FeatureCards() {
                 </span>
 
                 <div>
-                  <h3 className="text-xl font-extrabold text-[#102c63]">
+                  <h3 className="text-xl font-extrabold text-[var(--secondary-color)]">
                     {card.title}
                   </h3>
                   <p className="mt-2 max-w-[280px] text-sm leading-7 text-[#4f5d78]">

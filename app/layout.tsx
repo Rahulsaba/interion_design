@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins, Roboto } from "next/font/google";
+import BackToTop from "@/components/common/back-to-top";
 import SiteFooter from "@/components/layout/site-footer";
 import SiteHeader from "@/components/layout/site-header";
 import "./globals.css";
@@ -52,6 +53,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <BackToTop />
       </body>
     </html>
   );

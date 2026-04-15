@@ -15,7 +15,7 @@ export default function ContactFormSection() {
           </div>
 
           <div className="rounded-[28px] bg-[#ead9cf] p-5 sm:p-7 md:p-8">
-            <h2 className="text-2xl font-extrabold text-[#102c63] md:text-3xl">
+            <h2 className="text-2xl font-extrabold text-[var(--secondary-color)] md:text-3xl">
               Get In Touch
             </h2>
             <p className="mt-3 max-w-[620px] text-sm leading-7 text-[#4f5d78] md:text-base">
@@ -38,7 +38,7 @@ export default function ContactFormSection() {
                     id="contact-name"
                     type="text"
                     placeholder="Your Name"
-                    className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[#102c63] outline-none transition focus:border-[#f7901d]"
+                    className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[var(--secondary-color)] outline-none transition focus:border-[#f7901d]"
                   />
                 </div>
 
@@ -54,7 +54,7 @@ export default function ContactFormSection() {
                     id="contact-email"
                     type="email"
                     placeholder="Your Email"
-                    className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[#102c63] outline-none transition focus:border-[#f7901d]"
+                    className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[var(--secondary-color)] outline-none transition focus:border-[#f7901d]"
                   />
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function ContactFormSection() {
                   id="contact-subject"
                   type="text"
                   placeholder="Your Subject"
-                  className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[#102c63] outline-none transition focus:border-[#f7901d]"
+                  className="h-12 w-full rounded-xl border border-transparent bg-white pl-11 pr-4 text-sm text-[var(--secondary-color)] outline-none transition focus:border-[#f7901d]"
                 />
               </div>
 
@@ -86,7 +86,7 @@ export default function ContactFormSection() {
                 <textarea
                   id="contact-message"
                   placeholder="Write Your Message"
-                  className="min-h-[140px] w-full resize-y rounded-xl border border-transparent bg-white pl-11 pr-4 pt-4 text-sm text-[#102c63] outline-none transition focus:border-[#f7901d]"
+                  className="min-h-[140px] w-full resize-y rounded-xl border border-transparent bg-white pl-11 pr-4 pt-4 text-sm text-[var(--secondary-color)] outline-none transition focus:border-[#f7901d]"
                 />
               </div>
 

@@ -15,7 +15,7 @@ export default function PageHero({ title, breadcrumbLabel }: PageHeroProps) {
         priority
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#102c63]/80" />
+      <div className="absolute inset-0 bg-[#102c63]/78" />
 
       <div className="relative mx-auto flex h-full max-w-[1200px] items-center justify-center px-4 text-center text-white">
         <div>
