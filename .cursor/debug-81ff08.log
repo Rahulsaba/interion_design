@@ -1,0 +1,7 @@
+{"sessionId":"81ff08","runId":"pre-fix","hypothesisId":"H1","location":"scripts/debug-deps.mjs:35","message":"framer-motion declared in package.json","data":{"framerInPkg":"^12.38.0"},"timestamp":1776274479625}
+{"sessionId":"81ff08","runId":"pre-fix","hypothesisId":"H3","location":"scripts/debug-deps.mjs:37","message":"framer-motion present in lockfile","data":{"framerInLock":true},"timestamp":1776274479747}
+{"sessionId":"81ff08","runId":"pre-fix","hypothesisId":"H4","location":"scripts/debug-deps.mjs:43","message":"navbar import source check","data":{"navbarImportExact":true},"timestamp":1776274479748}
+{"sessionId":"81ff08","runId":"pre-fix","hypothesisId":"H5","location":"scripts/debug-deps.mjs:46","message":"hero carousel import source check","data":{"heroImportExact":true},"timestamp":1776274479749}
+{"sessionId":"81ff08","runId":"pre-fix","hypothesisId":"H2","location":"scripts/debug-deps.mjs:36","message":"framer-motion present in node_modules","data":{"framerInNodeModules":false},"timestamp":1776274479744}
+{"sessionId":"81ff08","runId":"post-fix","hypothesisId":"H6","location":"components/sections/home/about-section.tsx:18","message":"about section rendered with fill images and sizes","data":{"firstImageHasSizes":true,"secondImageHasSizes":true},"timestamp":1776274622509}
+{"sessionId":"81ff08","runId":"post-fix","hypothesisId":"H6","location":"components/sections/home/about-section.tsx:18","message":"about section rendered with fill images and sizes","data":{"firstImageHasSizes":true,"secondImageHasSizes":true},"timestamp":1776274622987}

@@ -14,7 +14,7 @@ const aboutHighlights = [
   },
 ];
 
-export default function AboutSection() {
+export default function AboutContentSection() {
   return (
     <section className="bg-[#f5f5f5] py-10">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-center">

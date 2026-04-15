@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const menuItems = [
   { label: "Home", href: "/" },
-  { label: "About" },
+  { label: "About", href: "/about" },
   { label: "Services" },
   { label: "Pages" },
   { label: "Portfolio" },
