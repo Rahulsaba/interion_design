@@ -44,7 +44,7 @@ export default function AboutSection() {
             About Us
           </span>
 
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#102c63] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-5xl">
             We Are The
             <span className="text-[var(--primary-color)]"> Best And Expert </span>
             For Construction
@@ -66,7 +66,9 @@ export default function AboutSection() {
                   <i className={item.iconClass} aria-hidden="true" />
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold text-[#102c63]">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-[var(--secondary-color)]">
+                    {item.title}
+                  </h3>
                   <p className="mt-1 text-sm leading-7 text-[#4f5d78]">
                     {item.description}
                   </p>

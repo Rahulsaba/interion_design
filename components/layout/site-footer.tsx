@@ -138,13 +138,6 @@ export default function SiteFooter() {
                 <i className={`fa-brands ${icon}`} />
               </button>
             ))}
-            <button
-              type="button"
-              className="ml-2 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] text-white"
-              aria-label="Back to top"
-            >
-              <i className="fa-solid fa-arrow-up" />
-            </button>
           </div>
         </div>
       </div>
