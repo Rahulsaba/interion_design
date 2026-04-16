@@ -18,7 +18,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-30 border-b border-[#e9e9e9] bg-white">
+    <div className="border-b border-[#e9e9e9] bg-white">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4">
         <div className="flex items-center gap-2">
           <span className="text-[26px] font-extrabold tracking-tight text-[#1f2d3d]">
