@@ -3,6 +3,8 @@ import AboutContentSection from "@/components/sections/about/about-content";
 import AboutStatsStripSection from "@/components/sections/about/about-stats-strip";
 import ScrollReveal from "@/components/sections/about/scroll-reveal";
 import WorkingProcessSection from "@/components/sections/about/working-process";
+import TestimonialSection from "@/components/sections/testimonial/testimonial-section";
+import TeamSection from "@/components/sections/team/team-section";
 
 export default function AboutPage() {
   return (
@@ -16,6 +18,12 @@ export default function AboutPage() {
       </ScrollReveal>
       <ScrollReveal delay={0.12}>
         <WorkingProcessSection />
+      </ScrollReveal>
+      <ScrollReveal delay={0.16}>
+        <TestimonialSection />
+      </ScrollReveal>
+      <ScrollReveal delay={0.2}>
+        <TeamSection />
       </ScrollReveal>
     </main>
   );
