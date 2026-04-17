@@ -43,7 +43,7 @@ export default function WorkingProcessSection() {
 
           <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-[var(--secondary-color)] md:text-4xl">
             Easy Steps For{" "}
-            <span className="text-[var(--theme-color,#FC8C03)]">Constux</span>
+            <span className="text-[var(--theme-color,#FC8C03)]">dmconstruction</span>
           </h2>
 
           <div className="mx-auto mt-3 flex w-[90px] items-center justify-center gap-2">

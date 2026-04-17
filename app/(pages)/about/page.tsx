@@ -9,7 +9,7 @@ import TeamSection from "@/components/sections/team/team-section";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Constux, our construction expertise, experienced team, and commitment to delivering quality projects.",
+    "Learn about dmconstruction, our construction expertise, experienced team, and commitment to delivering quality projects.",
 };
 
 export default function AboutPage() {

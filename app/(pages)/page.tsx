@@ -14,7 +14,7 @@ import TestimonialSection from "@/components/sections/testimonial/testimonial-se
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Discover Constux construction services, featured projects, expert team, and trusted solutions for modern building needs.",
+    "Discover dmconstruction construction services, featured projects, expert team, and trusted solutions for modern building needs.",
 };
 
 export default function Home() {

@@ -82,7 +82,7 @@ export default function WorkingProcessSection() {
             Working Process
           </span>
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
-            Easy Steps For <span className="text-[var(--primary-color)]">Constux</span>
+            Easy Steps For <span className="text-[var(--primary-color)]">dmconstruction</span>
           </h2>
           <span className="mx-auto mt-4 block h-1 w-16 rounded-full bg-[var(--primary-color)]" />
         </div>

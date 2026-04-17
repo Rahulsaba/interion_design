@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4">
         <div className="flex items-center gap-2">
           <span className="text-[26px] font-extrabold tracking-tight text-[#1f2d3d]">
-            <span className="text-[var(--primary-color)]">cons</span>tux
+            <span className="text-[var(--primary-color)]">dm</span>construction
           </span>
         </div>
 

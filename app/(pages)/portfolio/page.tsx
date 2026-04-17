@@ -5,7 +5,7 @@ import PortfolioInnerCardsSection from "@/components/sections/portfolio/portfoli
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "View Constux portfolio projects and completed works across construction, architecture, and design categories.",
+    "View dmconstruction portfolio projects and completed works across construction, architecture, and design categories.",
 };
 
 export default function PortfolioPage() {

@@ -1,0 +1,1 @@
+{"sessionId":"2b0de7","runId":"pre-fix","hypothesisId":"H1","location":"next.config.ts:22","message":"framer-motion resolution failed during Next config load","data":{"error":"Cannot find module 'framer-motion/package.json'\nRequire stack:\n- D:\\web dev\\interior_design\\next.config.compiled.js"},"timestamp":1776433712773}

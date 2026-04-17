@@ -44,7 +44,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <section className="relative !py-0 min-h-[calc(100vh-88px)] overflow-hidden lg:min-h-[calc(100vh-136px)]">
+    <section className="relative !py-0 min-h-[calc(100dvh-88px)] overflow-hidden lg:min-h-[calc(100dvh-136px)]">
       <AnimatePresence mode="sync">
         <motion.div
           key={slides[currentSlide].id}
@@ -65,7 +65,7 @@ export default function HeroCarousel() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] w-full max-w-[1200px] items-center px-4 lg:min-h-[calc(100vh-136px)]">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100dvh-88px)] w-full max-w-[1200px] items-center px-4 lg:min-h-[calc(100dvh-136px)]">
         <motion.div
           key={`content-${slides[currentSlide].id}`}
           initial={{ opacity: 0, x: -18 }}

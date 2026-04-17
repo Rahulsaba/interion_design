@@ -29,11 +29,11 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: {
-    default: "Constux",
-    template: "%s | Constux",
+    default: "dmconstruction",
+    template: "%s | dmconstruction",
   },
   description:
-    "Constux provides modern construction, architecture, and interior design services for residential and commercial projects.",
+    "dmconstruction provides modern construction, architecture, and interior design services for residential and commercial projects.",
 };
 
 export default function RootLayout({

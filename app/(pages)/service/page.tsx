@@ -5,7 +5,7 @@ import ServiceSection from "@/components/sections/service/service-section";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Constux services including construction, maintenance, and design solutions tailored to your project goals.",
+    "Explore dmconstruction services including construction, maintenance, and design solutions tailored to your project goals.",
 };
 
 export default function ServicePage() {

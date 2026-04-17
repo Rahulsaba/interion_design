@@ -7,7 +7,7 @@ import ContactMapSection from "@/components/sections/contact/contact-map";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Constux for project consultations, service inquiries, and support from our construction experts.",
+    "Contact dmconstruction for project consultations, service inquiries, and support from our construction experts.",
 };
 
 export default function ContactPage() {
