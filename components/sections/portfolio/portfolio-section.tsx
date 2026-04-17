@@ -56,8 +56,8 @@ export default function PortfolioSection() {
   };
 
   return (
-    <section className="bg-[#f5f5f5] py-10">
-      <div className="relative pb-16">
+    <section className="bg-[var(--section-bg)] py-10">
+      <div className="relative ">
         <div className="relative overflow-hidden bg-[var(--secondary-color)] pt-10">
           <Image
             src="/images/bg/portfolio_bg.webp"

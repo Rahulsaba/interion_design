@@ -28,52 +28,50 @@ const services = [
   },
 ];
 
-export default function ServiceSection() {
+type ServiceSectionProps = {
+  showIntro?: boolean;
+};
+
+export default function ServiceSection({ showIntro = false }: ServiceSectionProps) {
   return (
-    <section className="relative overflow-hidden py-10 text-white">
-      <Image
-        src="/images/bg/service_bg.webp"
-        alt="Architecture blueprint background"
-        fill
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-[var(--secondary-color)]/85" />
+    <section className="bg-[var(--section-bg)] py-10">
+      <div className="mx-auto max-w-[1200px] px-4">
+        {showIntro && (
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
+                <i className="fa-regular fa-building" />
+                Services
+              </span>
+              <h2 className="mt-3 max-w-[460px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
+                What Services We Are
+                <span className="text-[var(--primary-color)]"> Provide </span>
+                To You
+              </h2>
+            </div>
 
-      <div className="relative z-10 mx-auto max-w-[1200px] px-4">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold">
-              <i className="fa-regular fa-building" />
-              Services
-            </span>
-            <h2 className="mt-3 max-w-[460px] text-3xl font-extrabold leading-tight md:text-4xl">
-              What Services We Are
-              <span className="text-[var(--primary-color)]"> Provide </span>
-              To You
-            </h2>
+            <div className="max-w-[420px]">
+              <p className="text-sm leading-7 text-[#4f5d78]">
+                There are many variations of passages available but the majority
+                have suffered alteration in some form by injected humour slightly
+                believable.
+              </p>
+              <Link
+                href="/service"
+                className="mt-3 inline-flex h-10 items-center rounded-md bg-[var(--primary-color)] px-4 text-sm font-semibold text-white transition hover:brightness-95"
+              >
+                All Services
+                <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[11px]" />
+              </Link>
+            </div>
           </div>
+        )}
 
-          <div className="max-w-[420px]">
-            <p className="text-sm leading-7 text-white/90">
-              There are many variations of passages available but the majority
-              have suffered alteration in some form by injected humour slightly
-              believable.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-3 inline-flex h-10 items-center rounded-md bg-[var(--primary-color)] px-4 text-sm font-semibold text-white transition hover:brightness-95"
-            >
-              All Services
-              <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[11px]" />
-            </Link>
-          </div>
-        </div>
-
-        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className={`${showIntro ? "mt-8" : ""} grid gap-5 md:grid-cols-2 xl:grid-cols-3`}>
           {services.map((service) => (
             <article
               key={service.id}
-              className="relative rounded-2xl bg-[#f2f2f2] p-3 text-[#1b2735]"
+              className="relative rounded-2xl bg-[#ffffff] p-3 text-[#1b2735]"
             >
               <div className="relative h-[190px] overflow-hidden rounded-xl">
                 <Image
@@ -95,18 +93,12 @@ export default function ServiceSection() {
                 <p className="mt-2 text-sm leading-7 text-[#4f5d78]">
                   {service.description}
                 </p>
-                <Link
-                  href="/contact"
-                  className="mt-3 inline-flex h-9 items-center rounded-md bg-[var(--primary-color)] px-3 text-sm font-semibold text-white transition hover:brightness-95"
-                >
-                  Learn More
-                  <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[11px]" />
-                </Link>
+                <div className="mt-3 flex items-end justify-between gap-3">
+                  <p className="text-5xl font-extrabold leading-none tracking-wide text-[#eaeaea] [text-shadow:-1px_0_#c9c9c9,0_1px_#c9c9c9,1px_0_#c9c9c9,0_-1px_#c9c9c9]">
+                    {service.id}
+                  </p>
+                </div>
               </div>
-
-              <p className="mt-2 text-5xl font-extrabold leading-none tracking-wide text-[#eaeaea] [text-shadow:-1px_0_#c9c9c9,0_1px_#c9c9c9,1px_0_#c9c9c9,0_-1px_#c9c9c9]">
-                {service.id}
-              </p>
               <span className="absolute bottom-0 right-0 h-10 w-10 rounded-br-2xl border-b-4 border-r-4 border-[var(--primary-color)]" />
             </article>
           ))}

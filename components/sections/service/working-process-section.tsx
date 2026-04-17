@@ -74,14 +74,14 @@ export default function WorkingProcessSection() {
   }, [isSkillsInView]);
 
   return (
-    <section className="bg-[#f5f5f5] py-10">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="text-center">
           <span className="inline-flex h-9 items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 text-sm font-semibold text-white">
             <i className="fa-regular fa-building" />
             Working Process
           </span>
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
             Easy Steps For <span className="text-[var(--primary-color)]">Constux</span>
           </h2>
           <span className="mx-auto mt-4 block h-1 w-16 rounded-full bg-[var(--primary-color)]" />
@@ -126,7 +126,7 @@ export default function WorkingProcessSection() {
               <i className="fa-regular fa-building" />
               Our Skills
             </span>
-            <h3 className="mt-4 max-w-[560px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-5xl">
+            <h3 className="mt-4 max-w-[560px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
               We Offers You Best
               <span className="text-[var(--primary-color)]"> Construction </span>
               Services
@@ -154,14 +154,6 @@ export default function WorkingProcessSection() {
                 </div>
               ))}
             </div>
-
-            <Link
-              href="/contact"
-              className="mt-8 inline-flex h-11 items-center rounded-md bg-[var(--primary-color)] px-5 text-sm font-semibold text-white transition hover:brightness-95"
-            >
-              Learn More
-              <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[12px]" />
-            </Link>
           </div>
         </div>
       </div>

@@ -25,14 +25,14 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-[#f3f3f3] py-20 md:py-24">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1240px] px-4">
         <div className="text-center">
           <span className="inline-flex h-9 items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 text-sm font-semibold text-white">
             <i className="fa-regular fa-building text-xs" />
             Our Team
           </span>
-          <h2 className="mt-4 text-4xl font-extrabold text-[#07225c] md:text-[56px]">
+          <h2 className="mt-4 text-4xl font-extrabold text-[var(--secondary-color)] md:text-4xl">
             Meet With Our <span className="text-[var(--primary-color)]">Experts</span>
           </h2>
           <div className="mx-auto mt-4 flex items-center justify-center gap-2">

@@ -23,15 +23,15 @@ const reasons = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="bg-[#f5f5f5] py-10">
-      <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-center">
+    <section className="bg-[var(--section-bg)] py-10">
+      <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-start">
         <div>
           <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
             <i className="fa-regular fa-building" />
             Why Choose Us
           </span>
 
-          <h2 className="mt-3 max-w-[560px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-5xl">
+          <h2 className="mt-3 max-w-[560px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
             We Deliver Expertise You Can Trust
             <span className="text-[var(--primary-color)]"> Our Service</span>
           </h2>

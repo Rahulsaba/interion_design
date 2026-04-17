@@ -23,7 +23,7 @@ const contactCards = [
 
 export default function ContactInfoCards() {
   return (
-    <section className="bg-[#f5f5f5] py-16">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {contactCards.map((card) => (
@@ -31,7 +31,7 @@ export default function ContactInfoCards() {
               key={card.title}
               className="rounded-[24px] bg-[#ead9cf] px-6 py-8 text-center shadow-sm"
             >
-              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#f7901d] text-2xl text-white">
+              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[var(--primary-color)] text-2xl text-white">
                 <i className={card.iconClass} aria-hidden="true" />
               </span>
               <h3 className="mt-5 text-xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-2xl">

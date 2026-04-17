@@ -49,7 +49,7 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-[1200px] px-4 pb-9 pt-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h2 className="text-[44px] font-extrabold leading-none tracking-tight">
+            <h2 className="text-[36px] font-extrabold leading-none tracking-tight">
               <span className="text-[var(--primary-color)]">cons</span>tux
             </h2>
             <p className="mt-5 max-w-[340px] text-[17px] leading-8 text-white/90">
@@ -58,7 +58,7 @@ export default function SiteFooter() {
               words believable.
             </p>
 
-            <h3 className="mt-8 text-[28px] font-bold">Subscribe Our Newsletter</h3>
+            <h3 className="mt-8 text-[16px] font-bold">Subscribe Our Newsletter</h3>
             <div className="mt-4 flex max-w-[420px] items-center rounded-full border border-white/20 p-1">
               <div className="flex flex-1 items-center gap-2 pl-4">
                 <i className="fa-regular fa-envelope text-[var(--primary-color)]" />
@@ -79,7 +79,7 @@ export default function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-[34px] font-extrabold">Company</h3>
+            <h3 className="text-[28px] font-extrabold">Company</h3>
             <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-3 text-[18px]">
               {companyLinks.map((item) => (
@@ -91,7 +91,7 @@ export default function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-[34px] font-extrabold">Services</h3>
+            <h3 className="text-[28px] font-extrabold">Services</h3>
             <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-3 text-[18px]">
               {serviceLinks.map((item) => (
@@ -103,7 +103,7 @@ export default function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-[34px] font-extrabold">Get In Touch</h3>
+            <h3 className="text-[28px] font-extrabold">Get In Touch</h3>
             <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-5">
               {contactItems.map((item) => (
@@ -112,7 +112,7 @@ export default function SiteFooter() {
                     <i className={item.icon} />
                   </span>
                   <div>
-                    <p className="text-[24px] font-bold leading-tight">{item.title}</p>
+                    <p className="text-[20px] font-bold leading-tight">{item.title}</p>
                     <p className="mt-1 text-[18px] text-white/90">{item.value}</p>
                   </div>
                 </li>

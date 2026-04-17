@@ -33,14 +33,14 @@ export default function TestimonialSection() {
         fill
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#058f97]/82" />
+      <div className="absolute inset-0 bg-[var(--secondary-color)]/82" />
 
       <div className="relative z-10 mx-auto max-w-[1220px] px-4 text-center">
         <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 text-xs font-semibold text-white">
           <i className="fa-regular fa-message text-[11px]" />
           Testimonials
         </span>
-        <h2 className="mt-4 text-4xl font-extrabold leading-tight text-white md:text-[52px]">
+        <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white md:text-4xl">
           What Our Client <span className="text-[var(--primary-color)]">Say&apos;s</span>
           <br />
           About Us
@@ -86,7 +86,7 @@ export default function TestimonialSection() {
                   />
                 </span>
                 <div>
-                  <h3 className="text-[31px] leading-tight font-bold text-white md:text-[32px]">
+                  <h3 className="text-1xl leading-tight font-bold text-white md:text-2xl">
                     {item.name}
                   </h3>
                   <p className="text-base font-semibold text-[var(--primary-color)]">

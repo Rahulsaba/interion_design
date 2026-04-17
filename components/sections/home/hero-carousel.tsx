@@ -44,8 +44,8 @@ export default function HeroCarousel() {
   };
 
   return (
-    <section className="relative min-h-[430px] overflow-hidden md:min-h-[520px]">
-      <AnimatePresence mode="wait">
+    <section className="relative !py-0 min-h-[calc(100vh-88px)] overflow-hidden lg:min-h-[calc(100vh-136px)]">
+      <AnimatePresence mode="sync">
         <motion.div
           key={slides[currentSlide].id}
           className="absolute inset-0"
@@ -61,11 +61,11 @@ export default function HeroCarousel() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(17,46,105,0.88)_0%,rgba(17,46,105,0.7)_35%,rgba(17,46,105,0.2)_70%,rgba(17,46,105,0.1)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(43,43,43,0.88)_0%,rgba(43,43,43,0.7)_35%,rgba(43,43,43,0.2)_70%,rgba(43,43,43,0.1)_100%)]" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 mx-auto flex min-h-[430px] w-full max-w-[1200px] items-center px-4 md:min-h-[520px]">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] w-full max-w-[1200px] items-center px-4 lg:min-h-[calc(100vh-136px)]">
         <motion.div
           key={`content-${slides[currentSlide].id}`}
           initial={{ opacity: 0, x: -18 }}
@@ -87,14 +87,14 @@ export default function HeroCarousel() {
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link
-              href="/contact"
+              href="/about"
               className="inline-flex h-10 items-center rounded-md bg-[var(--primary-color)] px-4 text-sm font-semibold text-white transition hover:brightness-95"
             >
               About More
               <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[11px]" />
             </Link>
             <Link
-              href="/contact"
+              href="/service"
               className="inline-flex h-10 items-center rounded-md bg-[var(--secondary-color)] px-4 text-sm font-semibold text-white transition hover:brightness-110"
             >
               Learn More

@@ -41,7 +41,7 @@ export default function TopBar() {
           ))}
         </ul>
 
-        <div className="hidden h-12 items-center bg-[#f7901d] px-8 lg:flex [clip-path:polygon(6%_0,100%_0,94%_100%,0_100%)]">
+        <div className="hidden h-12 items-center bg-[var(--primary-color)] px-8 lg:flex [clip-path:polygon(6%_0,100%_0,94%_100%,0_100%)]">
           <div className="flex items-center gap-3">
             <span className="text-[13px] font-medium">Follow Us:</span>
             <ul className="flex items-center gap-2">
@@ -49,7 +49,7 @@ export default function TopBar() {
                 <li key={icon}>
                   <button
                     type="button"
-                    className="flex h-7 w-7 items-center justify-center rounded-full border border-white/55 text-[12px] transition hover:bg-white hover:text-[#f7901d]"
+                    className="flex h-7 w-7 items-center justify-center rounded-full border border-white/55 text-[12px] transition hover:bg-white hover:text-[var(--primary-color)]"
                   >
                     <i className={icon} />
                   </button>

@@ -6,7 +6,6 @@ const blogPosts = [
     id: 1,
     date: "20 Aug",
     author: "Alicia Davis",
-    comments: "2.5k Comments",
     title: "There Are Many Variations Of Passages Orem Available.",
     excerpt:
       "It is a long established fact that a reader will majority have suffered distracted readable.",
@@ -15,7 +14,6 @@ const blogPosts = [
     id: 2,
     date: "25 Aug",
     author: "Alicia Davis",
-    comments: "1.2k Comments",
     title: "Generator Internet Repeat Tend Word Chunk Necessary.",
     excerpt:
       "It is a long established fact that a reader will majority have suffered distracted readable.",
@@ -24,7 +22,6 @@ const blogPosts = [
     id: 3,
     date: "28 Aug",
     author: "Alicia Davis",
-    comments: "2.8k Comments",
     title: "Survived Only Five Centuries But Also The Leap Into.",
     excerpt:
       "It is a long established fact that a reader will majority have suffered distracted readable.",
@@ -33,7 +30,7 @@ const blogPosts = [
 
 export default function BlogSection() {
   return (
-    <section className="bg-[#f5f5f5] py-10">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="text-center">
           <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
@@ -69,10 +66,6 @@ export default function BlogSection() {
                 <span className="inline-flex items-center gap-1">
                   <i className="fa-regular fa-user text-[var(--primary-color)]" />
                   By {post.author}
-                </span>
-                <span className="inline-flex items-center gap-1">
-                  <i className="fa-regular fa-comments text-[var(--primary-color)]" />
-                  {post.comments}
                 </span>
               </div>
 

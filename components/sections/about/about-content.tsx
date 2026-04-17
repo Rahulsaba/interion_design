@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const aboutHighlights = [
   {
@@ -16,7 +15,7 @@ const aboutHighlights = [
 
 export default function AboutContentSection() {
   return (
-    <section className="bg-[#f5f5f5] py-10">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-center">
         <div className="relative mx-auto w-full max-w-[620px] pb-0 md:pb-12">
           <div className="relative h-[420px] w-full overflow-hidden rounded-[30px] md:h-[480px] md:w-[74%]">
@@ -46,7 +45,7 @@ export default function AboutContentSection() {
             About Us
           </span>
 
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#102c63] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
             We Are The
             <span className="text-[var(--primary-color)]"> Best And Expert </span>
             For Construction
@@ -68,7 +67,7 @@ export default function AboutContentSection() {
                   <i className={item.iconClass} aria-hidden="true" />
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold text-[#102c63]">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-[var(--secondary-color)]">{item.title}</h3>
                   <p className="mt-1 text-sm leading-7 text-[#4f5d78]">
                     {item.description}
                   </p>
@@ -77,13 +76,6 @@ export default function AboutContentSection() {
             ))}
           </div>
 
-          <Link
-            href="/contact"
-            className="mt-6 inline-flex h-11 items-center rounded-md bg-[var(--primary-color)] px-5 text-sm font-semibold text-white transition hover:brightness-95"
-          >
-            Discover More
-            <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[12px]" />
-          </Link>
         </div>
       </div>
     </section>

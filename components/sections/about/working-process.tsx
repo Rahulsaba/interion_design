@@ -31,7 +31,7 @@ const processSteps = [
 
 export default function WorkingProcessSection() {
   return (
-    <section className="bg-[#f5f5f5] !py-16 md:!py-20">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-[var(--theme-color,#FC8C03)] px-4 py-1 text-sm font-semibold text-white shadow-sm">
@@ -41,7 +41,7 @@ export default function WorkingProcessSection() {
             Working Process
           </span>
 
-          <h2 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-[#102c63] md:text-[52px]">
+          <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-[var(--secondary-color)] md:text-4xl">
             Easy Steps For{" "}
             <span className="text-[var(--theme-color,#FC8C03)]">Constux</span>
           </h2>
@@ -69,7 +69,7 @@ export default function WorkingProcessSection() {
                 {step.id}
               </p>
 
-              <h3 className="mt-2 text-[20px] font-extrabold leading-tight text-[#102c63]">
+              <h3 className="mt-2 text-[20px] font-extrabold leading-tight text-[var(--secondary-color)]">
                 {step.title}
               </h3>
 

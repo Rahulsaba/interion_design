@@ -24,7 +24,7 @@ const featureCards = [
 
 export default function FeatureCards() {
   return (
-    <section className="bg-[#f5f5f5] py-10">
+    <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {featureCards.map((card) => (

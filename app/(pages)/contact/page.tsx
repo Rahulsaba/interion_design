@@ -1,22 +1,22 @@
+import type { Metadata } from "next";
 import PageHero from "@/components/sections/page-hero";
 import ContactInfoCards from "@/components/sections/contact/contact-card";
 import ContactFormSection from "@/components/sections/contact/contact-form";
 import ContactMapSection from "@/components/sections/contact/contact-map";
-import ScrollReveal from "@/components/sections/contact/scroll-reveal";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Contact Constux for project consultations, service inquiries, and support from our construction experts.",
+};
 
 export default function ContactPage() {
   return (
     <main>
       <PageHero title="Contact Us" breadcrumbLabel="Contact Us" />
-      <ScrollReveal>
-        <ContactInfoCards />
-      </ScrollReveal>
-      <ScrollReveal delay={0.08}>
-        <ContactFormSection />
-      </ScrollReveal>
-      <ScrollReveal delay={0.12}>
-        <ContactMapSection />
-      </ScrollReveal>
+      <ContactInfoCards />
+      <ContactFormSection />
+      <ContactMapSection />
     </main>
   );
 }

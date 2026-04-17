@@ -7,12 +7,13 @@ import { useState } from "react";
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services" },
-  { label: "Pages" },
-  { label: "Portfolio" },
-  { label: "Blog" },
+  { label: "Services", href: "/service" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];
+
+const whatsappLink =
+  "https://wa.me/919677559741?text=Hi%20I%20am%20interested%20in%20your%20services";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4">
         <div className="flex items-center gap-2">
           <span className="text-[26px] font-extrabold tracking-tight text-[#1f2d3d]">
-            <span className="text-[#f7901d]">cons</span>tux
+            <span className="text-[var(--primary-color)]">cons</span>tux
           </span>
         </div>
 
@@ -33,30 +34,32 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-[15px] font-semibold text-[#1b2735] transition hover:text-[#f7901d]"
+                  className="text-[15px] font-semibold text-[#1b2735] transition hover:text-[var(--primary-color)]"
                 >
                   {item.label}
                 </Link>
               ) : (
                 <span
                   key={item.label}
-                  className="cursor-default text-[15px] font-semibold text-[#1b2735] transition hover:text-[#f7901d]"
+                  className="cursor-default text-[15px] font-semibold text-[#1b2735] transition hover:text-[var(--primary-color)]"
                 >
                   {item.label}
                 </span>
               ),
             )}
           </nav>
-          <button
-            type="button"
-            className="hidden rounded-md bg-[#f7901d] px-5 py-2 text-[15px] font-bold text-white transition hover:bg-[#e48518] sm:inline-flex sm:items-center"
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-md bg-[var(--primary-color)] px-5 py-2 text-[15px] font-bold text-white transition hover:bg-[#e48518] sm:inline-flex sm:items-center"
           >
             Let&apos;s Talk
             <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[13px]" />
-          </button>
+          </a>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-[#d9d9d9] text-[18px] text-[#1d2a3a] transition hover:bg-[#f6f6f6] lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-[#d9d9d9] text-[18px] text-[#1d2a3a] transition hover:bg-[var(--section-bg)] lg:hidden"
             aria-label="Open menu"
             aria-expanded={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -104,7 +107,7 @@ export default function Navbar() {
                     {item.href ? (
                       <Link
                         href={item.href}
-                        className="block rounded-md px-3 py-2 text-sm font-semibold text-[#1b2735] transition hover:bg-[#f8f8f8] hover:text-[#f7901d]"
+                        className="block rounded-md px-3 py-2 text-sm font-semibold text-[#1b2735] transition hover:bg-[#f8f8f8] hover:text-[var(--primary-color)]"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {item.label}
@@ -118,13 +121,15 @@ export default function Navbar() {
                 ))}
               </ul>
 
-              <button
-                type="button"
-                className="mt-4 inline-flex h-10 items-center rounded-md bg-[#f7901d] px-4 text-sm font-bold text-white transition hover:bg-[#e48518]"
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex h-10 items-center rounded-md bg-[var(--primary-color)] px-4 text-sm font-bold text-white transition hover:bg-[#e48518]"
               >
                 Let&apos;s Talk
                 <i className="fa-solid fa-arrow-up-right-from-square ml-2 text-[12px]" />
-              </button>
+              </a>
             </motion.nav>
           </>
         )}
