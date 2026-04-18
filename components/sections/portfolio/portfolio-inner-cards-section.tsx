@@ -1,47 +1,37 @@
 import Image from "next/image";
 
 const portfolioCards = [
-  {
-    id: 1,
-    category: "Food and Beverage",
-    title: "Hill's Pet Nutrition",
-  },
-  {
-    id: 2,
-    category: "Food and Beverage",
-    title: "Hill's Pet Nutrition",
-  },
-  {
-    id: 3,
-    category: "Food and Beverage",
-    title: "Hill's Pet Nutrition",
-  },
+  { id: 1, image: "/images/portfolio/portfollio_inner_card.jpg" },
+  { id: 2, image: "/images/portfolio/portfolio_1.webp" },
+  { id: 3, image: "/images/portfolio/portfolio_2.webp" },
+  { id: 4, image: "/images/portfolio/portfolio_3.webp" },
 ];
 
 export default function PortfolioInnerCardsSection() {
   return (
-    <section className="bg-[var(--section-bg)] py-10">
-      <div className="mx-auto grid max-w-[1200px] gap-6 px-4 md:grid-cols-2 xl:grid-cols-3">
+    <section className="bg-[var(--section-bg)] py-10 md:py-14">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {portfolioCards.map((card) => (
           <article
             key={card.id}
-            className="overflow-hidden rounded-[10px] border-[6px] border-white shadow-sm"
+            className="group overflow-hidden rounded-[28px] shadow-sm"
           >
-            <div className="relative h-[335px]">
+            <div className="relative h-[260px]">
               <Image
-                src="/images/portfolio/portfollio_inner_card.jpg"
-                alt={card.title}
+                src={card.image}
+                alt={`Portfolio project ${card.id}`}
                 fill
-                sizes="(min-width: 1280px) 32vw, (min-width: 768px) 48vw, 100vw"
-                className="object-cover"
+                sizes="(min-width: 1024px) 24vw, (min-width: 640px) 48vw, 100vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,43,43,0.62)_0%,rgba(43,43,43,0.18)_45%,rgba(43,43,43,0)_100%)]" />
-
-              <div className="absolute left-7 top-7 text-white">
-                <p className="text-[15px] font-semibold md:text-[16px]">{card.category}</p>
-                <h3 className="mt-3 max-w-[250px] text-[28px] leading-tight font-extrabold md:text-[36px]">
-                  {card.title}
-                </h3>
+              <div className="pointer-events-none absolute inset-0 p-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="h-full w-full rounded-[18px] bg-[#FF9800]/85" />
+              </div>
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span className="relative h-10 w-10">
+                  <span className="absolute top-1/2 left-0 h-1 w-full -translate-y-1/2 rounded-full bg-white" />
+                  <span className="absolute top-0 left-1/2 h-full w-1 -translate-x-1/2 rounded-full bg-white" />
+                </span>
               </div>
             </div>
           </article>

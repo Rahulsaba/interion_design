@@ -72,9 +72,14 @@ export default function PortfolioSection() {
               <i className="fa-regular fa-building" />
               Our Portfolio
             </span>
-            <h2 className="mx-auto mt-3 max-w-[440px] text-3xl font-extrabold leading-tight text-white md:text-4xl">
-              Let&apos;s Check Our Latest Portfolio
+            <h2 className="mx-auto mt-3 max-w-[559px] text-3xl font-extrabold leading-tight text-white md:text-4xl">
+              Let&apos;s Check Our Latest{" "}
+              <span className="text-[var(--primary-color)]">Portfolio</span>
             </h2>
+            <div className="mx-auto mt-4 flex items-center justify-center gap-2">
+              <span className="h-[3px] w-14 rounded-full bg-[var(--primary-color)]" />
+              <span className="h-[3px] w-2 rounded-full bg-[var(--primary-color)]/80" />
+            </div>
           </div>
         </div>
 

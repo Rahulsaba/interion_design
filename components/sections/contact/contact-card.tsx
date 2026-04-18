@@ -29,15 +29,15 @@ export default function ContactInfoCards() {
           {contactCards.map((card) => (
             <article
               key={card.title}
-              className="rounded-[24px] bg-[#ead9cf] px-6 py-8 text-center shadow-sm"
+              className="rounded-[24px] bg-[var(--secondary-color)] px-6 py-8 text-center shadow-sm"
             >
               <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[var(--primary-color)] text-2xl text-white">
                 <i className={card.iconClass} aria-hidden="true" />
               </span>
-              <h3 className="mt-5 text-xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-2xl">
+              <h3 className="mt-5 text-xl font-extrabold leading-tight text-white md:text-2xl">
                 {card.title}
               </h3>
-              <p className="mt-3 text-sm font-medium text-[var(--secondary-color)] md:text-base">
+              <p className="mt-3 text-sm font-medium text-white md:text-base">
                 {card.detail}
               </p>
             </article>

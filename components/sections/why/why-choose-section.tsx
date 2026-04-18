@@ -4,19 +4,19 @@ const reasons = [
   {
     title: "Affordable Cost",
     description:
-      "There are many variations of passages available the majority have suffered alteration in some by injected humour.",
+      "We offer cost-effective interior design and construction solutions with clear pricing and no hidden project charges.",
     iconClass: "fa-solid fa-coins",
   },
   {
     title: "Our Experience Team",
     description:
-      "There are many variations of passages available the majority have suffered alteration in some by injected humour.",
+      "Our experienced team manages planning, execution, and finishing with precision to deliver high-quality project results.",
     iconClass: "fa-solid fa-users-gear",
   },
   {
     title: "Certified Company",
     description:
-      "There are many variations of passages available the majority have suffered alteration in some by injected humour.",
+      "As a certified company, DM Construction follows trusted standards to ensure safety, quality, and client confidence.",
     iconClass: "fa-regular fa-circle-check",
   },
 ];
@@ -32,13 +32,14 @@ export default function WhyChooseSection() {
           </span>
 
           <h2 className="mt-3 max-w-[560px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
-            We Deliver Expertise You Can Trust
-            <span className="text-[var(--primary-color)]"> Our Service</span>
+            Why DM Construction Is
+            <span className="text-[var(--primary-color)]"> The Right Choice</span>
           </h2>
 
           <p className="mt-3 max-w-[620px] text-sm leading-7 text-[#4f5d78] md:text-base">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            We combine creative interior design, reliable construction, and
+            transparent communication to deliver quality spaces that match your
+            style, budget, and timeline.
           </p>
 
           <div className="mt-6 space-y-4">
@@ -63,7 +64,7 @@ export default function WhyChooseSection() {
         <div className="relative mx-auto w-full max-w-[520px] pb-0 md:pb-16">
           <span className="absolute left-7 top-8 hidden h-[220px] w-[220px] rounded-[30px] border-[6px] border-[var(--primary-color)] md:block" />
 
-          <div className="relative z-10 ml-auto h-[330px] w-full max-w-[420px] overflow-hidden rounded-[30px] md:h-[420px]">
+          <div className="relative z-10 mx-auto h-[330px] w-full max-w-[420px] overflow-hidden rounded-[30px] md:ml-auto md:mr-0 md:h-[420px]">
             <Image
               src="/images/why/choose_2.jpg"
               alt="Construction team at elevated work area"
@@ -72,7 +73,7 @@ export default function WhyChooseSection() {
             />
           </div>
 
-          <div className="relative z-20 mt-4 h-[190px] w-[190px] overflow-hidden rounded-full border-[7px] border-[#f5f5f5] md:absolute md:bottom-0 md:left-0 md:mt-0 md:h-[220px] md:w-[220px]">
+          <div className="relative z-20 mx-auto mt-4 h-[190px] w-[190px] overflow-hidden rounded-full border-[7px] border-[#f5f5f5] md:absolute md:bottom-0 md:left-0 md:mt-0 md:h-[220px] md:w-[220px]">
             <Image
               src="/images/why/choose_1.jpg"
               alt="Engineers checking construction plans"

@@ -53,7 +53,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className={`${roboto.className} min-h-full flex flex-col`}>
+      <body className={`${roboto.className} min-h-full flex flex-col overflow-x-hidden`}>
         <SiteHeader />
         {children}
         <SiteFooter />

@@ -40,7 +40,36 @@ try {
 }
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    localPatterns: [
+      {
+        pathname: "/images/**",
+      },
+      {
+        pathname: "/images/**",
+        search: "?v=2",
+      },
+      {
+        pathname: "/sliders_image/**",
+      },
+    ],
+  },
 };
+
+// #region agent log
+fetch("http://127.0.0.1:7306/ingest/2036b00e-37c3-47b3-9077-4c8bfcc3e38f", {
+  method: "POST",
+  headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "f2df8a" },
+  body: JSON.stringify({
+    sessionId: "f2df8a",
+    runId: "pre-fix",
+    hypothesisId: "H1",
+    location: "next.config.ts:46",
+    message: "Next config images settings at load",
+    data: { hasImagesConfig: Boolean(nextConfig.images), images: nextConfig.images ?? null },
+    timestamp: Date.now(),
+  }),
+}).catch(() => {});
+// #endregion
 
 export default nextConfig;

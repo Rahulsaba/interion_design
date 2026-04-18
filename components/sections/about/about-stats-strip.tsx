@@ -87,16 +87,16 @@ export default function AboutStatsStripSection() {
         {stats.map((item, index) => (
           <article
             key={item.label}
-            className="relative z-[1] mx-auto flex w-full max-w-[320px] flex-row items-center justify-center gap-3 rounded-[100px] px-4 py-5 text-left shadow-[0_0_40px_5px_rgb(0_0_0_/_5%)] sm:max-w-none lg:justify-start"
+            className="relative z-[1] mx-auto flex w-full max-w-[320px] flex-col items-center justify-center gap-3 rounded-[100px] px-4 py-5 text-center shadow-[0_0_40px_5px_rgb(0_0_0_/_5%)] sm:max-w-none"
           
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[18px] text-[#FC8C03]">
               <i className={item.iconClass} aria-hidden="true" />
             </span>
-            <div className="text-center text-white lg:text-left">
+            <div className="text-center text-white">
               <p className="font-heading text-4xl leading-[0.9] font-bold tracking-tight text-white">
                 {animatedValues[index]}
-                <span className="ml-1 align-top text-xl text-[#FC8C03]">
+                <span className="align-top text-xl text-[#FC8C03]">
                   {item.suffix}
                 </span>
               </p>

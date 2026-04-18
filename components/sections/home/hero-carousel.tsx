@@ -8,27 +8,27 @@ import { useState } from "react";
 const slides = [
   {
     id: 1,
-    image: "/sliders_image/slider_1.webp",
-    eyebrow: "BUILD YOUR DREAM",
-    title: "We Are The Leader In Construction Company",
+    image: "/sliders_image/main_bg_1.webp",
+    eyebrow: "DM CONSTRUCTION",
+    title: "Luxury Interior Design by DM Construction",
     description:
-      "There are many variations of passages available but the majority have suffered alteration in some form by injected humour.",
+      "DM Construction creates modern interior spaces and delivers complete construction solutions with quality materials, skilled execution, and on-time delivery.",
   },
   {
     id: 2,
-    image: "/sliders_image/slider_1.webp",
-    eyebrow: "BUILD YOUR DREAM",
-    title: "We Are The Leader In Construction Company",
+    image: "/sliders_image/main_bg_2.webp",
+    eyebrow: "DM CONSTRUCTION",
+    title: "Smart Construction for Modern Spaces",
     description:
-      "There are many variations of passages available but the majority have suffered alteration in some form by injected humour.",
+      "From planning and design to final finishing, DM Construction transforms homes and commercial spaces into functional, elegant, and durable environments.",
   },
   {
     id: 3,
-    image: "/sliders_image/slider_1.webp",
-    eyebrow: "BUILD YOUR DREAM",
-    title: "We Are The Leader In Construction Company",
+    image: "/sliders_image/main_bg_3.webp",
+    eyebrow: "DM CONSTRUCTION",
+    title: "Premium Interior Construction Solutions",
     description:
-      "There are many variations of passages available but the majority have suffered alteration in some form by injected humour.",
+      "Choose DM Construction for custom interior design, renovation, and construction services tailored to your style, budget, and project goals.",
   },
 ];
 
@@ -44,11 +44,11 @@ export default function HeroCarousel() {
   };
 
   return (
-    <section className="relative !py-0 min-h-[calc(100dvh-88px)] overflow-hidden lg:min-h-[calc(100dvh-136px)]">
+    <section className="relative !py-0 min-h-[calc(100dvh-88px)] w-full max-w-full overflow-x-hidden overflow-y-hidden lg:min-h-[calc(100dvh-136px)]">
       <AnimatePresence mode="sync">
         <motion.div
           key={slides[currentSlide].id}
-          className="absolute inset-0"
+          className="absolute inset-0 overflow-hidden"
           initial={{ opacity: 0.3, scale: 1.04 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0.2, scale: 1.01 }}
@@ -59,7 +59,7 @@ export default function HeroCarousel() {
             alt="Construction workers at a site"
             fill
             priority
-            className="object-cover"
+            className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(43,43,43,0.88)_0%,rgba(43,43,43,0.7)_35%,rgba(43,43,43,0.2)_70%,rgba(43,43,43,0.1)_100%)]" />
         </motion.div>

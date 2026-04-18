@@ -4,28 +4,36 @@ import Link from "next/link";
 const services = [
   {
     id: "01",
-    title: "Building Construction",
+    title: "Interior design",
     description:
-      "There are many variations of passages have available but the majority have suffered some form by injected humour words believable.",
-    image: "/images/aboutus/about1.webp",
-    iconClass: "fa-solid fa-building",
+      "We create stylish and functional interior spaces with smart layouts, quality finishes, and detail-focused execution for daily comfort.",
+    image: "/images/services/service-1.webp",
+    iconClass: "fa-solid fa-home",
   },
   {
     id: "02",
-    title: "Building Maintenance",
+    title: "Commercial design",
     description:
-      "There are many variations of passages have available but the majority have suffered some form by injected humour words believable.",
-    image: "/images/aboutus/about2.webp",
-    iconClass: "fa-solid fa-screwdriver-wrench",
+      "Our commercial design solutions improve workflow, brand presence, and space efficiency through practical planning and modern aesthetics.",
+    image: "/images/services/service-2.webp",
+    iconClass: "fa-solid fa-city",
   },
   {
     id: "03",
-    title: "Design & Estimating",
+    title: "Repair and finishing",
     description:
-      "There are many variations of passages have available but the majority have suffered some form by injected humour words believable.",
-    image: "/images/main_contact.webp",
-    iconClass: "fa-solid fa-drafting-compass",
+      "We handle repairs and final finishing with precision, delivering clean surfaces, lasting durability, and polished project outcomes.",
+    image: "/images/services/service-3.webp",
+    iconClass: "fa-solid fa-paint-roller",
   },
+  // {
+  //   id: "04",
+  //   title: "Construction",
+  //   description:
+  //     "There are many variations of passages have available but the majority have suffered some form by injected humour words believable.",
+  //   image: "/images/services/service-4.webp",
+  //   iconClass: "fa-solid fa-drafting-compass",
+  // },
 ];
 
 type ServiceSectionProps = {
@@ -71,7 +79,7 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
           {services.map((service) => (
             <article
               key={service.id}
-              className="relative rounded-2xl bg-[#ffffff] p-3 text-[#1b2735]"
+              className="group relative rounded-2xl bg-[#ffffff] p-3 text-[#1b2735]"
             >
               <div className="relative h-[190px] overflow-hidden rounded-xl">
                 <Image
@@ -82,7 +90,7 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
                 />
               </div>
 
-              <span className="absolute right-7 top-[175px] z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--primary-color)] text-white shadow">
+              <span className="absolute right-7 top-[175px] z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--primary-color)] text-white shadow group-hover:animate-[icon-twist_650ms_ease-in-out_1]">
                 <i className={service.iconClass} aria-hidden="true" />
               </span>
 
@@ -93,11 +101,6 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
                 <p className="mt-2 text-sm leading-7 text-[#4f5d78]">
                   {service.description}
                 </p>
-                <div className="mt-3 flex items-end justify-between gap-3">
-                  <p className="text-5xl font-extrabold leading-none tracking-wide text-[#eaeaea] [text-shadow:-1px_0_#c9c9c9,0_1px_#c9c9c9,1px_0_#c9c9c9,0_-1px_#c9c9c9]">
-                    {service.id}
-                  </p>
-                </div>
               </div>
               <span className="absolute bottom-0 right-0 h-10 w-10 rounded-br-2xl border-b-4 border-r-4 border-[var(--primary-color)]" />
             </article>

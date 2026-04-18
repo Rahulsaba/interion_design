@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const menuItems = [
@@ -17,6 +18,12 @@ const whatsappLink =
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActiveLink = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <div className="border-b border-[#e9e9e9] bg-white">
@@ -34,7 +41,11 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-[15px] font-semibold text-[#1b2735] transition hover:text-[var(--primary-color)]"
+                  className={`text-[15px] font-semibold transition hover:text-[var(--primary-color)] ${
+                    isActiveLink(item.href)
+                      ? "text-[var(--primary-color)]"
+                      : "text-[#1b2735]"
+                  }`}
                 >
                   {item.label}
                 </Link>
@@ -107,7 +118,11 @@ export default function Navbar() {
                     {item.href ? (
                       <Link
                         href={item.href}
-                        className="block rounded-md px-3 py-2 text-sm font-semibold text-[#1b2735] transition hover:bg-[#f8f8f8] hover:text-[var(--primary-color)]"
+                        className={`block rounded-md px-3 py-2 text-sm font-semibold transition hover:bg-[#f8f8f8] hover:text-[var(--primary-color)] ${
+                          isActiveLink(item.href)
+                            ? "bg-[var(--primary-color)]/10 text-[var(--primary-color)]"
+                            : "text-[#1b2735]"
+                        }`}
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {item.label}

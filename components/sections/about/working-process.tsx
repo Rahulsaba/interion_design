@@ -3,28 +3,28 @@ const processSteps = [
     id: "01",
     title: "Choose Service",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      "Choose the interior or construction service that best fits your space, goals, and project expectations.",
     iconClass: "fa-solid fa-clipboard-list",
   },
   {
     id: "02",
     title: "Free Consultant",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      "Get a free consultation with our team to discuss design ideas, timelines, materials, and execution plans.",
     iconClass: "fa-solid fa-people-group",
   },
   {
     id: "03",
     title: "Estimate Budget",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      "Receive a clear budget estimate with transparent pricing based on your design and construction requirements.",
     iconClass: "fa-solid fa-calculator",
   },
   {
     id: "04",
     title: "Project Production",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      "We begin project execution with skilled workmanship, quality checks, and timely delivery from start to finish.",
     iconClass: "fa-solid fa-city",
   },
 ];

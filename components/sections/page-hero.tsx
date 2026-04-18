@@ -9,7 +9,7 @@ export default function PageHero({ title, breadcrumbLabel }: PageHeroProps) {
   return (
     <section className="relative h-[260px] overflow-hidden md:h-[320px]">
       <Image
-        src="/images/bg/inner_bg.webp"
+        src="/images/bg/inner_bg.webp?v=2"
         alt="Construction site background"
         fill
         priority

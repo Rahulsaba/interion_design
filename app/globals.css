@@ -121,6 +121,11 @@
 }
 
 @layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
@@ -146,5 +151,20 @@
 
 .container {
   @apply mx-auto max-w-[1100px];
+}
+
+@keyframes icon-twist {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  30% {
+    transform: rotate(-14deg) scale(1.05);
+  }
+  60% {
+    transform: rotate(14deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 

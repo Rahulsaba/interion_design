@@ -1,15 +1,15 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 
-const companyLinks = [
-  "About Us",
-  "Update News",
-  "Testimonials",
-  "Contact Us",
-  "Terms Of Service",
-  "Privacy policy",
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/service" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const contactItems = [
@@ -32,9 +32,8 @@ const contactItems = [
 
 const socialIcons = [
   "fa-facebook-f",
-  "fa-x-twitter",
+  "fa-instagram",
   "fa-linkedin-in",
-  "fa-youtube",
 ];
 
 type NewsletterFormValues = {
@@ -110,12 +109,14 @@ export default function SiteFooter() {
           </div>
 
           <div className="w-full">
-            <h3 className="text-[28px] font-extrabold">Company</h3>
+            <h3 className="text-[28px] font-extrabold">Quick Links</h3>
             <div className="mb-5 mt-2 h-[3px] w-7 bg-[var(--primary-color)]" />
             <ul className="space-y-3 text-[18px]">
-              {companyLinks.map((item) => (
-                <li key={item} className="text-white/95">
-                  {item}
+              {quickLinks.map((item) => (
+                <li key={item.label} className="text-white/95">
+                  <Link href={item.href} className="transition hover:text-[var(--primary-color)]">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>

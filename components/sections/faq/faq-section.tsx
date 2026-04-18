@@ -5,27 +5,27 @@ import { useState } from "react";
 const faqs = [
   {
     id: 1,
-    question: "How Long Does A Service Take ?",
+    question: "How long does an interior project take?",
     answer:
-      "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment so blinded by desire unto odio dignissim quam vitae pulvinar turpis.",
+      "Project timelines depend on size and scope. Most interior projects are completed within a few weeks after design approval and material confirmation.",
   },
   {
     id: 2,
-    question: "How Can I Become A Member ?",
+    question: "Do you provide free site consultation?",
     answer:
-      "Becoming a member is simple. Reach out through our contact form and our team will guide you through onboarding, requirements, and the right service package.",
+      "Yes, DM Construction offers a free initial consultation to understand your requirements, inspect the space, and suggest suitable design options.",
   },
   {
     id: 3,
-    question: "What Payment Gateway You Support ?",
+    question: "How do you estimate project cost?",
     answer:
-      "We support secure online payments through major cards and trusted payment providers, along with bank transfer options for business requests.",
+      "We prepare a transparent estimate based on layout, materials, finishes, and labor. You receive a clear cost breakdown before work begins.",
   },
   {
     id: 4,
-    question: "How Can I Cancel My Request ?",
+    question: "Can I customize design and materials?",
     answer:
-      "You can cancel your request by contacting support before execution starts. Our team will help you with cancellation terms and confirmation quickly.",
+      "Absolutely. You can choose colors, finishes, materials, and style preferences. Our team will tailor the design to your budget and vision.",
   },
 ];
 
@@ -42,28 +42,24 @@ export default function FaqSection() {
           </span>
 
           <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
-            General
-            <span className="text-[var(--primary-color)]"> Frequently </span>
-            Asked Questions
+            Frequently Asked
+            <span className="text-[var(--primary-color)]"> Questions</span>
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-[#4f5d78] md:text-base">
-            There are many variations of passages of Lorem Ipsum available, but
-            one majority have suffered alteration in some form, by injected
-            humour, or randomised words which do not look even.
+            Find quick answers about our interior design and construction
+            services, including timelines, pricing, and customization options.
           </p>
           <p className="mt-4 text-sm leading-7 text-[#4f5d78] md:text-base">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            DM Construction is committed to clear communication at every stage,
+            so you always know what to expect from consultation to completion.
           </p>
 
           <button
             type="button"
             className="mt-5 inline-flex h-10 items-center rounded-md bg-[var(--primary-color)] px-4 text-sm font-semibold text-white transition hover:brightness-95"
           >
-            Have Any Question ?
+            Have Any Questions?
           </button>
         </div>
 

@@ -1,24 +1,24 @@
 const featureCards = [
   {
     id: "01",
-    title: "The Best Price",
+    title: "Affordable Pricing",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of the when looking layout.",
-    iconClass: "fa-solid fa-suitcase-rolling",
+      "DM Construction offers transparent pricing for interior design and construction, delivering quality workmanship within your planned budget.",
+    iconClass: "fa-solid fa-money-bill-wave",
   },
   {
     id: "02",
-    title: "Daily Consultant",
+    title: "Expert Consultation",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of the when looking layout.",
+      "Get daily guidance from DM Construction experts for planning, material selection, and smooth execution from start to finish.",
     iconClass: "fa-solid fa-users-gear",
   },
   {
     id: "03",
-    title: "Custom Design",
+    title: "Custom Interior Design",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of the when looking layout.",
-    iconClass: "fa-solid fa-drafting-compass",
+      "We design and build personalized residential and commercial interiors that match your style, function, and long-term needs.",
+    iconClass: "fa-solid fa-home",
   },
 ];
 
@@ -47,9 +47,6 @@ export default function FeatureCards() {
                 </div>
               </div>
 
-              <p className="mt-2 text-5xl font-extrabold leading-none tracking-wide text-white [text-shadow:-1px_0_#8d99ab,0_1px_#8d99ab,1px_0_#8d99ab,0_-1px_#8d99ab]">
-                {card.id}
-              </p>
               <span className="absolute bottom-0 right-0 h-11 w-11 rounded-br-[20px] border-b-4 border-r-4 border-[var(--primary-color)]" />
             </article>
           ))}

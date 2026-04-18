@@ -46,9 +46,8 @@ export default function TestimonialSection() {
           About Us
         </h2>
         <div className="mx-auto mt-4 flex items-center justify-center gap-2">
-          <span className="h-[3px] w-12 rounded-full bg-[var(--primary-color)]" />
-          <span className="h-2 w-2 rounded-full bg-[#dce7ea]" />
-          <span className="h-[3px] w-12 rounded-full bg-[var(--primary-color)]" />
+          <span className="h-[3px] w-14 rounded-full bg-[var(--primary-color)]" />
+          <span className="h-[3px] w-2 rounded-full bg-[var(--primary-color)]/80" />
         </div>
 
         <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-3">

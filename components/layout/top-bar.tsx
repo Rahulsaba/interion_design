@@ -18,7 +18,6 @@ const leftInfo = [
 
 const socialIcons = [
   "fa-brands fa-facebook-f",
-  "fa-brands fa-x-twitter",
   "fa-brands fa-instagram",
   "fa-brands fa-linkedin-in",
 ];

@@ -43,11 +43,11 @@ export default function ContactFormSection() {
             />
           </div>
 
-          <div className="rounded-[28px] bg-[#ead9cf] p-5 sm:p-7 md:p-8">
-            <h2 className="text-2xl font-extrabold text-[var(--secondary-color)] md:text-3xl">
+          <div className="rounded-[28px] bg-[var(--secondary-color)] p-5 sm:p-7 md:p-8">
+            <h2 className="text-2xl font-extrabold text-[var(--primary-color)] md:text-3xl">
               Get In Touch
             </h2>
-            <p className="mt-3 max-w-[620px] text-sm leading-7 text-[#4f5d78] md:text-base">
+            <p className="mt-3 max-w-[620px] text-sm leading-7 text-white md:text-base">
               It is a long established fact that a reader will be distracted by
               the readable content of a page randomised words which do not look
               even slightly when looking at its layout.
