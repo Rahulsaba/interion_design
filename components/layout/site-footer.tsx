@@ -31,10 +31,10 @@ const contactItems = [
   },
 ];
 
-const socialIcons = [
-  "fa-facebook-f",
-  "fa-instagram",
-  "fa-linkedin-in",
+const socialLinks = [
+  { icon: "fa-facebook-f", href: "#" },
+  { icon: "fa-instagram", href: "https://www.instagram.com/_dmconstruction_" },
+  { icon: "fa-linkedin-in", href: "#" },
 ];
 
 type NewsletterFormValues = {
@@ -156,14 +156,16 @@ export default function SiteFooter() {
           </p>
 
           <div className="flex items-center gap-3">
-            {socialIcons.map((icon) => (
-              <button
-                key={icon}
-                type="button"
+            {socialLinks.map((item) => (
+              <Link
+                key={item.icon}
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--secondary-color)] transition hover:bg-[var(--primary-color)] hover:text-white"
               >
-                <i className={`fa-brands ${icon}`} />
-              </button>
+                <i className={`fa-brands ${item.icon}`} />
+              </Link>
             ))}
           </div>
         </div>

@@ -10,7 +10,7 @@ const slides = [
     id: 1,
     image: "/sliders_image/main_bg_1.webp",
     eyebrow: "DM CONSTRUCTION",
-    title: "Luxury Interior Design by DM Construction",
+    title: "Smart Construction for Modern Spaces",
     description:
       "DM Construction creates modern interior spaces and delivers complete construction solutions with quality materials, skilled execution, and on-time delivery.",
   },
@@ -18,7 +18,7 @@ const slides = [
     id: 2,
     image: "/sliders_image/main_bg_2.webp",
     eyebrow: "DM CONSTRUCTION",
-    title: "Smart Construction for Modern Spaces",
+    title: " Luxury Interior Design by DM Construction",
     description:
       "From planning and design to final finishing, DM Construction transforms homes and commercial spaces into functional, elegant, and durable environments.",
   },
@@ -26,11 +26,13 @@ const slides = [
     id: 3,
     image: "/sliders_image/main_bg_3.webp",
     eyebrow: "DM CONSTRUCTION",
-    title: "Premium Interior Construction Solutions",
+    title: "Pre Engineered Steel Building Solutions ",
     description:
-      "Choose DM Construction for custom interior design, renovation, and construction services tailored to your style, budget, and project goals.",
+      "Choose DM Construction for custom pre-engineered steel buildings, fabrication, and installation services tailored to your needs, budget, and project requirements.",
   },
 ];
+
+const HERO_IMAGE_VERSION = "2026-04-19-2";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,7 +57,7 @@ export default function HeroCarousel() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <Image
-            src={slides[currentSlide].image}
+            src={`${slides[currentSlide].image}?v=${HERO_IMAGE_VERSION}`}
             alt="Construction workers at a site"
             fill
             priority
@@ -76,7 +78,7 @@ export default function HeroCarousel() {
           <p className="text-xs font-semibold tracking-[0.24em] text-white/90 md:text-sm">
             {slides[currentSlide].eyebrow}
           </p>
-          <h1 className="mt-3 text-3xl font-extrabold leading-tight text-white md:text-5xl">
+          <h1 className="mt-3 text-3xl font-extrabold leading-tight text-white md:text-4xl">
             {slides[currentSlide].title.split("Construction")[0]}
             <span className="text-[var(--primary-color)]">Construction</span>
             {slides[currentSlide].title.split("Construction")[1]}

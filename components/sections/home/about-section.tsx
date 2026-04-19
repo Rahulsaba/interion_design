@@ -1,24 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const aboutHighlights = [
-  {
-    title: "Design Experts",
-    description:
-      "Smart layouts and practical planning for interiors.",
-    iconClass: "fa-solid fa-pen-ruler",
-  },
-  {
-    title: "Quality Materials",
-    description:
-      "Durable, high-grade materials for lasting finishes.",
-    iconClass: "fa-solid fa-cubes",
-  },
-];
+import { aboutHighlights } from "../about/about-shared-content";
 
 export default function AboutSection() {
-  const primaryImageSrc = "/images/aboutus/about1.webp?v=2";
-  const secondaryImageSrc = "/images/aboutus/about2.webp?v=2";
+  const primaryImageSrc = "/images/aboutus/about1.webp?v=2026-04-19";
+  const secondaryImageSrc = "/images/aboutus/about2.webp?v=2026-04-19";
   // #region agent log
   fetch("http://127.0.0.1:7306/ingest/2036b00e-37c3-47b3-9077-4c8bfcc3e38f", {
     method: "POST",
@@ -67,8 +53,8 @@ export default function AboutSection() {
           </span>
 
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
-            We Are The
-            <span className="text-[var(--primary-color)]"> Interior Design Experts </span>
+            We Are
+            <span className="text-[var(--primary-color)]"> Trusted Home Builders </span>
             At DM Construction
           </h2>
 

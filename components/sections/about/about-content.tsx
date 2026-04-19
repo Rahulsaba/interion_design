@@ -1,21 +1,9 @@
 import Image from "next/image";
-
-const aboutHighlights = [
-  {
-    title: "Design Experts",
-    description: "Smart layouts and practical planning for interiors.",
-    iconClass: "fa-solid fa-pen-ruler",
-  },
-  {
-    title: "Quality Materials",
-    description: "Durable, high-grade materials for lasting finishes.",
-    iconClass: "fa-solid fa-cubes",
-  },
-];
+import { aboutHighlights } from "./about-shared-content";
 
 export default function AboutContentSection() {
-  const primaryImageSrc = "/images/aboutus/about1.webp?v=2";
-  const secondaryImageSrc = "/images/aboutus/about2.webp?v=2";
+  const primaryImageSrc = "/images/aboutus/about1.webp?v=2026-04-19";
+  const secondaryImageSrc = "/images/aboutus/about2.webp?v=2026-04-19";
 
   return (
     <section className="bg-[var(--section-bg)] py-10">
@@ -49,15 +37,13 @@ export default function AboutContentSection() {
           </span>
 
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
-            We Are The
-            <span className="text-[var(--primary-color)]"> Interior Design Experts </span>
+            We Are
+            <span className="text-[var(--primary-color)]"> Trusted Home Builders </span>
             At DM Construction
           </h2>
 
           <p className="mt-4 max-w-[620px] text-sm leading-8 text-[#4f5d78] md:text-base">
-            DM Construction delivers complete interior design and construction services for
-            homes and commercial spaces, combining creative planning, premium materials,
-            and precise execution to create functional and elegant environments.
+          DM Construction delivers complete home building and construction services for residential and commercial projects, combining smart planning, quality materials, and precise execution to create strong and lasting spaces.
           </p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">

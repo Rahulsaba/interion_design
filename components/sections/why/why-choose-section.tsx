@@ -22,6 +22,9 @@ const reasons = [
 ];
 
 export default function WhyChooseSection() {
+  const mainChooseImageSrc = "/images/why/choose_2.webp?v=2026-04-19-2";
+  const secondaryChooseImageSrc = "/images/why/choose_1.webp?v=2026-04-19";
+
   return (
     <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-start">
@@ -69,7 +72,7 @@ export default function WhyChooseSection() {
 
           <div className="relative z-10 mx-auto h-[330px] w-full max-w-[420px] overflow-hidden rounded-[30px] md:ml-auto md:mr-0 md:h-[420px]">
             <Image
-              src="/images/why/choose_2.webp"
+              src={mainChooseImageSrc}
               alt="Construction team at elevated work area"
               fill
               sizes="(max-width: 1024px) 100vw, 420px"
@@ -79,7 +82,7 @@ export default function WhyChooseSection() {
 
           <div className="relative z-20 mx-auto mt-4 h-[190px] w-[190px] overflow-hidden rounded-full border-[7px] border-[#f5f5f5] md:absolute md:bottom-0 md:left-0 md:mt-0 md:h-[220px] md:w-[220px]">
             <Image
-              src="/images/why/choose_1.webp"
+              src={secondaryChooseImageSrc}
               alt="Engineers checking construction plans"
               fill
               sizes="220px"

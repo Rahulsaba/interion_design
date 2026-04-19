@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const leftInfo = [
   {
     icon: "fa-regular fa-envelope",
@@ -16,10 +18,10 @@ const leftInfo = [
   },
 ];
 
-const socialIcons = [
-  "fa-brands fa-facebook-f",
-  "fa-brands fa-instagram",
-  "fa-brands fa-linkedin-in",
+const socialLinks = [
+  { icon: "fa-brands fa-facebook-f", href: "#" },
+  { icon: "fa-brands fa-instagram", href: "https://www.instagram.com/_dmconstruction_" },
+  { icon: "fa-brands fa-linkedin-in", href: "#" },
 ];
 
 export default function TopBar() {
@@ -44,14 +46,16 @@ export default function TopBar() {
           <div className="flex items-center gap-3">
             <span className="text-[13px] font-medium">Follow Us:</span>
             <ul className="flex items-center gap-2">
-              {socialIcons.map((icon) => (
-                <li key={icon}>
-                  <button
-                    type="button"
+              {socialLinks.map((item) => (
+                <li key={item.icon}>
+                  <Link
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="flex h-7 w-7 items-center justify-center rounded-full border border-white/55 text-[12px] transition hover:bg-white hover:text-[var(--primary-color)]"
                   >
-                    <i className={icon} />
-                  </button>
+                    <i className={item.icon} />
+                  </Link>
                 </li>
               ))}
             </ul>

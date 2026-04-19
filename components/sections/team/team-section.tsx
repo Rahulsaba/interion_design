@@ -1,26 +1,13 @@
 import Image from "next/image";
 
 const teamMembers = [
+ 
   {
-    name: "Rodrigues Christy",
-    role: "Project Manager",
-    image: "/images/teams/team_1.jpg",
-  },
-  {
-    name: "Matthew Hong",
+    name: "Deenson ",
     role: "CEO & Founder",
     image: "/images/teams/team_1.jpg",
   },
-  {
-    name: "Anita Bentley",
-    role: "Marketing Manager",
-    image: "/images/teams/team_1.jpg",
-  },
-  {
-    name: "Beverly Dyer",
-    role: "Civil Engineer",
-    image: "/images/teams/team_1.jpg",
-  },
+ 
 ];
 
 export default function TeamSection() {
@@ -41,9 +28,9 @@ export default function TeamSection() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 flex flex-wrap justify-center gap-6">
           {teamMembers.map((member) => (
-            <article key={member.name} className="text-center">
+            <article key={member.name} className="w-full max-w-[300px] text-center">
               <div className="relative rounded-[30px]">
                 <Image
                   src={member.image}

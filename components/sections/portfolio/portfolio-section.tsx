@@ -101,7 +101,7 @@ export default function PortfolioSection() {
               {loopedItems.map((item, index) => (
                 <article
                   key={`${item.id}-${index}`}
-                  className="px-2"
+                  className="group px-2"
                   style={{ width: `${cardWidth}%`, minWidth: `${cardWidth}%` }}
                 >
                   <div className="rounded-[22px] border-[6px] border-[#f2f2f2] bg-white shadow-sm">
@@ -110,8 +110,17 @@ export default function PortfolioSection() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
+                      <div className="pointer-events-none absolute inset-0 p-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <div className="h-full w-full rounded-[12px] bg-[#FF9800]/85" />
+                      </div>
+                      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <span className="relative h-10 w-10">
+                          <span className="absolute left-0 top-1/2 h-1 w-full -translate-y-1/2 rounded-full bg-white" />
+                          <span className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 rounded-full bg-white" />
+                        </span>
+                      </div>
                     </div>
 
                     <div className="rounded-b-[16px] bg-[var(--primary-color)] px-3 py-2 text-left text-white">

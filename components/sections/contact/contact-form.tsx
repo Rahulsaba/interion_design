@@ -11,6 +11,8 @@ type ContactFormValues = {
 };
 
 export default function ContactFormSection() {
+  const contactImageSrc = "/images/main_contact.webp?v=2026-04-19";
+
   const {
     register,
     handleSubmit,
@@ -36,7 +38,7 @@ export default function ContactFormSection() {
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="relative min-h-[320px] overflow-hidden rounded-[28px]">
             <Image
-              src="/images/main_contact.webp"
+              src={contactImageSrc}
               alt="Customer support representative smiling"
               fill
               className="object-cover"
