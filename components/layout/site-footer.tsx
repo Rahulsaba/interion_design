@@ -1,6 +1,7 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 
@@ -61,9 +62,15 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-[1200px] px-4 pb-9 pt-14">
         <div className="grid items-start gap-y-10 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[1.6fr_1fr_1fr] lg:gap-x-16">
           <div className="w-full">
-            <h2 className="text-[36px] font-extrabold leading-none tracking-tight">
-              <span className="text-[var(--primary-color)]">dm</span>construction
-            </h2>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/Logo.png"
+                alt="DM Construction"
+                width={240}
+                height={68}
+                className="h-14 w-auto max-w-full object-contain object-left"
+              />
+            </Link>
             <p className="mt-5 text-[17px] leading-8 text-white/90">
               We are many variations of passages available but the majority have
               suffered alteration some form by injected humour looking layout

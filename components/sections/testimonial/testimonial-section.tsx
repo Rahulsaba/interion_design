@@ -41,9 +41,7 @@ export default function TestimonialSection() {
           Testimonials
         </span>
         <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white md:text-4xl">
-          What Our Client <span className="text-[var(--primary-color)]">Say&apos;s</span>
-          <br />
-          About Us
+          What Our Client <span className="text-[var(--primary-color)]">Say&apos;s</span> About Us
         </h2>
         <div className="mx-auto mt-4 flex items-center justify-center gap-2">
           <span className="h-[3px] w-14 rounded-full bg-[var(--primary-color)]" />

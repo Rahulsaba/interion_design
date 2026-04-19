@@ -1,6 +1,7 @@
- "use client";
+"use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -28,11 +29,16 @@ export default function Navbar() {
   return (
     <div className="border-b border-[#e9e9e9] bg-white">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4">
-        <div className="flex items-center gap-2">
-          <span className="text-[26px] font-extrabold tracking-tight text-[#1f2d3d]">
-            <span className="text-[var(--primary-color)]">dm</span>construction
-          </span>
-        </div>
+        <Link href="/" className="flex shrink-0 items-center">
+          <Image
+            src="/images/Logo.png"
+            alt="DM Construction"
+            width={200}
+            height={56}
+            priority
+            className="h-10 w-auto object-contain object-left md:h-11"
+          />
+        </Link>
 
         <div className="flex items-center gap-5 lg:gap-6">
           <nav className="hidden items-center gap-6 lg:flex">

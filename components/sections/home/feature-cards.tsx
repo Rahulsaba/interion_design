@@ -30,10 +30,10 @@ export default function FeatureCards() {
           {featureCards.map((card) => (
             <article
               key={card.id}
-              className="relative rounded-[20px] bg-[#efefef] px-5 py-5 shadow-sm sm:px-6"
+              className="card-hover-icon-3d relative rounded-[20px] bg-[#efefef] px-5 py-5 shadow-sm sm:px-6"
             >
               <div className="flex items-start gap-4">
-                <span className="mt-1 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-[22px] text-white">
+                <span className="card-hover-icon-3d__icon mt-1 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-[22px] text-white">
                   <i className={card.iconClass} aria-hidden="true" />
                 </span>
 

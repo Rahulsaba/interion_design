@@ -34,7 +34,7 @@ export default function WorkingProcessSection() {
     <section className="bg-[var(--section-bg)] py-10">
       <div className="mx-auto max-w-[1200px] px-4">
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[var(--theme-color,#FC8C03)] px-4 py-1 text-sm font-semibold text-white shadow-sm">
+          <span className="inline-flex items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 py-1 text-sm font-semibold text-white shadow-sm">
             <span className="flex h-5 w-5 items-center justify-center rounded-full border border-white/65 text-[11px]">
               <i className="fa-regular fa-clock" />
             </span>
@@ -43,12 +43,12 @@ export default function WorkingProcessSection() {
 
           <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-[var(--secondary-color)] md:text-4xl">
             Easy Steps For{" "}
-            <span className="text-[var(--theme-color,#FC8C03)]">dmconstruction</span>
+            <span className="text-[var(--primary-color)]">dmconstruction</span>
           </h2>
 
           <div className="mx-auto mt-3 flex w-[90px] items-center justify-center gap-2">
-            <span className="h-[3px] w-16 rounded-full bg-[var(--theme-color,#FC8C03)]" />
-            <span className="h-[3px] w-3 rounded-full bg-[var(--theme-color,#FC8C03)]/65" />
+            <span className="h-[3px] w-16 rounded-full bg-[var(--primary-color)]" />
+            <span className="h-[3px] w-3 rounded-full bg-[var(--primary-color)]/65" />
           </div>
         </div>
 
@@ -56,15 +56,15 @@ export default function WorkingProcessSection() {
           {processSteps.map((step) => (
             <article
               key={step.id}
-              className="relative min-h-[250px] rounded-[16px] bg-[#f9f9f9] px-6 pb-6 pt-9 shadow-[0_8px_28px_rgba(0,0,0,0.04)]"
+              className="card-hover-icon-3d relative min-h-[250px] rounded-[16px] bg-[#f9f9f9] px-6 pb-6 pt-9 shadow-[0_8px_28px_rgba(0,0,0,0.04)]"
             >
-              <span className="absolute right-4 top-0 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#f5f5f5] bg-[var(--theme-color,#FC8C03)] text-[20px] text-white shadow-sm">
+              <span className="card-hover-icon-3d__icon absolute right-4 top-0 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#f5f5f5] bg-[var(--primary-color)] text-[20px] text-white shadow-sm">
                 <i className={step.iconClass} aria-hidden="true" />
               </span>
 
               <p
                 className="font-heading text-[44px] font-bold leading-none tracking-wide text-transparent"
-                style={{ WebkitTextStroke: "1px #f0bf6a" }}
+                style={{ WebkitTextStroke: "1px var(--primary-color)" }}
               >
                 {step.id}
               </p>

@@ -81,8 +81,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --primary-color: #f89a1c;
-  --secondary-color: #2b2b2b;
+  --primary-color: #fb6200;
+  --secondary-color: #000000;
+  /* --secondary-color: #2b2b2b; */
   --section-bg: #f5f5f5;
 }
 
@@ -166,5 +167,28 @@
   100% {
     transform: rotate(0deg) scale(1);
   }
+}
+
+@keyframes service-icon-flip-y {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Card hover: icon full Y-axis spin (plain CSS; works everywhere) */
+.card-hover-icon-3d {
+  perspective: 760px;
+}
+
+.card-hover-icon-3d__icon {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card-hover-icon-3d:hover .card-hover-icon-3d__icon {
+  animation: service-icon-flip-y 650ms ease-in-out 1;
 }
 

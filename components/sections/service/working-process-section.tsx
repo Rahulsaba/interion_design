@@ -91,13 +91,13 @@ export default function WorkingProcessSection() {
           {processSteps.map((step) => (
             <article
               key={step.id}
-              className="rounded-2xl bg-[#efefef] px-4 py-5 shadow-sm"
+              className="card-hover-icon-3d rounded-2xl bg-[#efefef] px-4 py-5 shadow-sm"
             >
               <div className="flex items-start justify-between gap-3">
                 <p className="text-4xl font-extrabold leading-none tracking-wide text-white [text-shadow:-1px_0_#8d99ab,0_1px_#8d99ab,1px_0_#8d99ab,0_-1px_#8d99ab]">
                   {step.id}
                 </p>
-                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--primary-color)] text-[22px] text-white">
+                <span className="card-hover-icon-3d__icon flex h-14 w-14 items-center justify-center rounded-full bg-[var(--primary-color)] text-[22px] text-white">
                   <i className={step.iconClass} aria-hidden="true" />
                 </span>
               </div>

@@ -19,7 +19,7 @@ const stats = [
     value: "120",
     suffix: "+",
     label: "Experts Staff",
-    iconClass: "fa-solid fa-people-group",
+    iconClass: "fa-solid fa-user-tie",
   },
   {
     value: "50",
@@ -87,16 +87,15 @@ export default function AboutStatsStripSection() {
         {stats.map((item, index) => (
           <article
             key={item.label}
-            className="relative z-[1] mx-auto flex w-full max-w-[320px] flex-col items-center justify-center gap-3 rounded-[100px] px-4 py-5 text-center shadow-[0_0_40px_5px_rgb(0_0_0_/_5%)] sm:max-w-none"
-          
+            className="card-hover-icon-3d relative z-[1] mx-auto flex w-full max-w-[320px] flex-col items-center justify-center gap-3 rounded-[100px] px-4 py-5 text-center shadow-[0_0_40px_5px_rgb(0_0_0_/_5%)] sm:max-w-none"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[18px] text-[#FC8C03]">
+            <span className="card-hover-icon-3d__icon flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[18px] text-[var(--primary-color)]">
               <i className={item.iconClass} aria-hidden="true" />
             </span>
             <div className="text-center text-white">
               <p className="font-heading text-4xl leading-[0.9] font-bold tracking-tight text-white">
                 {animatedValues[index]}
-                <span className="align-top text-xl text-[#FC8C03]">
+                <span className="align-top text-xl text-[var(--primary-color)]">
                   {item.suffix}
                 </span>
               </p>

@@ -48,7 +48,7 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
-                <i className="fa-regular fa-building" />
+                <i className="fa-solid fa-hard-hat" />
                 Services
               </span>
               <h2 className="mt-3 max-w-[460px] text-3xl font-extrabold leading-tight text-[var(--secondary-color)] md:text-4xl">
@@ -79,7 +79,7 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
           {services.map((service) => (
             <article
               key={service.id}
-              className="group relative rounded-2xl bg-[#ffffff] p-3 text-[#1b2735]"
+              className="card-hover-icon-3d relative rounded-2xl bg-[#ffffff] p-3 text-[#1b2735]"
             >
               <div className="relative h-[190px] overflow-hidden rounded-xl">
                 <Image
@@ -90,7 +90,7 @@ export default function ServiceSection({ showIntro = false }: ServiceSectionProp
                 />
               </div>
 
-              <span className="absolute right-7 top-[175px] z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--primary-color)] text-white shadow group-hover:animate-[icon-twist_650ms_ease-in-out_1]">
+              <span className="card-hover-icon-3d__icon absolute right-7 top-[175px] z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--primary-color)] text-white shadow">
                 <i className={service.iconClass} aria-hidden="true" />
               </span>
 

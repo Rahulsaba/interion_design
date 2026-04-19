@@ -29,7 +29,7 @@ export default function TeamSection() {
       <div className="mx-auto max-w-[1240px] px-4">
         <div className="text-center">
           <span className="inline-flex h-9 items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 text-sm font-semibold text-white">
-            <i className="fa-regular fa-building text-xs" />
+            <i className="fa-solid fa-people-group text-xs" />
             Our Team
           </span>
           <h2 className="mt-4 text-4xl font-extrabold text-[var(--secondary-color)] md:text-4xl">
@@ -44,7 +44,7 @@ export default function TeamSection() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <article key={member.name} className="text-center">
-              <div className="relative overflow-visible rounded-[30px]">
+              <div className="relative rounded-[30px]">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -52,9 +52,6 @@ export default function TeamSection() {
                   height={380}
                   className="h-[300px] w-full rounded-[30px] object-cover"
                 />
-                <span className="absolute bottom-0 right-2 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded-full bg-[var(--primary-color)] text-white shadow-[0_8px_18px_rgba(248,154,28,0.35)]">
-                  <i className="fa-solid fa-share-nodes text-[13px]" />
-                </span>
               </div>
 
               <h3 className="mt-7 text-[18px] leading-tight font-bold text-[#112655] md:text-[20px]">

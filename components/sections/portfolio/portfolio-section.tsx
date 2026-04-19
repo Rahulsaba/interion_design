@@ -69,7 +69,7 @@ export default function PortfolioSection() {
 
           <div className="relative z-10 mx-auto max-w-[1200px] px-4 pb-24 text-center">
             <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
-              <i className="fa-regular fa-building" />
+              <i className="fa-solid fa-images" />
               Our Portfolio
             </span>
             <h2 className="mx-auto mt-3 max-w-[559px] text-3xl font-extrabold leading-tight text-white md:text-4xl">

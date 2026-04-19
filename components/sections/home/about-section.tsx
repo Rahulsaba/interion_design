@@ -82,9 +82,9 @@ export default function AboutSection() {
             {aboutHighlights.map((item) => (
               <article
                 key={item.title}
-                className="flex items-start gap-3 rounded-2xl bg-[#efefef] p-4 shadow-sm"
+                className="card-hover-icon-3d flex items-start gap-3 rounded-2xl bg-[#efefef] p-4 shadow-sm"
               >
-                <span className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-lg text-white">
+                <span className="card-hover-icon-3d__icon mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-lg text-white">
                   <i className={item.iconClass} aria-hidden="true" />
                 </span>
                 <div>

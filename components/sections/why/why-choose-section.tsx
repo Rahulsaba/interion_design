@@ -27,7 +27,7 @@ export default function WhyChooseSection() {
       <div className="mx-auto grid max-w-[1200px] gap-10 px-4 lg:grid-cols-2 lg:items-start">
         <div>
           <span className="inline-flex h-8 items-center gap-2 rounded-full bg-[var(--primary-color)] px-3 text-xs font-semibold text-white">
-            <i className="fa-regular fa-building" />
+            <i className="fa-solid fa-thumbs-up" />
             Why Choose Us
           </span>
 
@@ -44,8 +44,11 @@ export default function WhyChooseSection() {
 
           <div className="mt-6 space-y-4">
             {reasons.map((reason) => (
-              <article key={reason.title} className="flex items-start gap-3">
-                <span className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
+              <article
+                key={reason.title}
+                className="card-hover-icon-3d flex items-start gap-3"
+              >
+                <span className="card-hover-icon-3d__icon mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--primary-color)] text-white">
                   <i className={reason.iconClass} aria-hidden="true" />
                 </span>
                 <div>
@@ -66,18 +69,20 @@ export default function WhyChooseSection() {
 
           <div className="relative z-10 mx-auto h-[330px] w-full max-w-[420px] overflow-hidden rounded-[30px] md:ml-auto md:mr-0 md:h-[420px]">
             <Image
-              src="/images/why/choose_2.jpg"
+              src="/images/why/choose_2.webp"
               alt="Construction team at elevated work area"
               fill
+              sizes="(max-width: 1024px) 100vw, 420px"
               className="object-cover"
             />
           </div>
 
           <div className="relative z-20 mx-auto mt-4 h-[190px] w-[190px] overflow-hidden rounded-full border-[7px] border-[#f5f5f5] md:absolute md:bottom-0 md:left-0 md:mt-0 md:h-[220px] md:w-[220px]">
             <Image
-              src="/images/why/choose_1.jpg"
+              src="/images/why/choose_1.webp"
               alt="Engineers checking construction plans"
               fill
+              sizes="220px"
               className="object-cover"
             />
           </div>
