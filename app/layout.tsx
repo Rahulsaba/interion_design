@@ -34,6 +34,15 @@ export const metadata: Metadata = {
   },
   description:
     "dmconstruction provides modern construction, architecture, and interior design services for residential and commercial projects.",
+  icons: {
+    icon: [
+      { url: "/fav/favicon.ico" },
+      { url: "/fav/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/fav/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/fav/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/fav/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -47,6 +56,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${roboto.variable} h-full antialiased`}
     >
       <head>
+        <link rel="icon" href="/fav/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png" />
+        <link rel="manifest" href="/fav/site.webmanifest" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"

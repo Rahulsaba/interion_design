@@ -54,6 +54,38 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/favicon.ico",
+        destination: "/fav/favicon.ico",
+      },
+      {
+        source: "/apple-touch-icon.png",
+        destination: "/fav/apple-touch-icon.png",
+      },
+      {
+        source: "/site.webmanifest",
+        destination: "/fav/site.webmanifest",
+      },
+      {
+        source: "/android-chrome-192x192.png",
+        destination: "/fav/android-chrome-192x192.png",
+      },
+      {
+        source: "/android-chrome-512x512.png",
+        destination: "/fav/android-chrome-512x512.png",
+      },
+      {
+        source: "/favicon-16x16.png",
+        destination: "/fav/favicon-16x16.png",
+      },
+      {
+        source: "/favicon-32x32.png",
+        destination: "/fav/favicon-32x32.png",
+      },
+    ];
+  },
 };
 
 // #region agent log

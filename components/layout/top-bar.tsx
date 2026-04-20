@@ -4,12 +4,14 @@ const leftInfo = [
   {
     icon: "fa-regular fa-envelope",
     title: "Email",
-    value: "info@example.com",
+    value: "dm.propertiees@gmail.com",
+    href: "mailto:dm.propertiees@gmail.com",
   },
   {
     icon: "fa-solid fa-phone-volume",
     title: "Phone",
-    value: "+2 123 654 7898",
+    value: "+91 6383154985",
+    href: "tel:+916383154985",
   },
   {
     icon: "fa-regular fa-clock",
@@ -36,7 +38,15 @@ export default function TopBar() {
               </span>
               <div className="leading-tight">
                 <p className="text-[14px] font-semibold">{item.title}</p>
-                <p className="text-[13px] text-white/85">{item.value}</p>
+                <p className="text-[13px] text-white/85">
+                  {item.href ? (
+                    <a href={item.href} className="transition hover:text-[var(--primary-color)]">
+                      {item.value}
+                    </a>
+                  ) : (
+                    item.value
+                  )}
+                </p>
               </div>
             </li>
           ))}

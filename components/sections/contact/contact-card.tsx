@@ -1,22 +1,24 @@
 const contactCards = [
   {
     title: "Office Address",
-    detail: "25/B Milford, New York, USA",
+    detail: "147F, Mill Road, Nazareth,Tuticorin - 628 617. ",
     iconClass: "fa-regular fa-map",
   },
   {
     title: "Call Us",
-    detail: "+2 123 4565 789",
+    detail: "+91 6383154985",
+    href: "tel:+916383154985",
     iconClass: "fa-solid fa-phone-volume",
   },
   {
     title: "Email Us",
-    detail: "info@example.com",
+    detail: "dm.propertiees@gmail.com",
+    href: "mailto:dm.propertiees@gmail.com",
     iconClass: "fa-regular fa-envelope",
   },
   {
     title: "Open Time",
-    detail: "Mon - Sat (10.00AM - 05.30PM)",
+    detail: "Mon - Sat\n(10.00AM - 05.30PM)",
     iconClass: "fa-regular fa-clock",
   },
 ];
@@ -37,8 +39,14 @@ export default function ContactInfoCards() {
               <h3 className="mt-5 text-xl font-extrabold leading-tight text-white md:text-2xl">
                 {card.title}
               </h3>
-              <p className="mt-3 text-sm font-medium text-white md:text-base">
-                {card.detail}
+              <p className="mt-3 whitespace-pre-line text-sm font-medium text-white md:text-base">
+                {card.href ? (
+                  <a href={card.href} className="transition hover:text-[var(--primary-color)]">
+                    {card.detail}
+                  </a>
+                ) : (
+                  card.detail
+                )}
               </p>
             </article>
           ))}

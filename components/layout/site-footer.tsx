@@ -17,24 +17,20 @@ const contactItems = [
   {
     icon: "fa-solid fa-location-dot",
     title: "Our Address",
-    value: "25/AB Milford Road, New York, USA",
+    value: "147F, Mill Road, Nazareth,Tuticorin - 628 617. ",
   },
   {
     icon: "fa-solid fa-phone-volume",
     title: "Call Us",
-    value: "+2 123 654 7898",
+    value: "+91 6383154985",
+    href: "tel:+916383154985",
   },
   {
     icon: "fa-regular fa-envelope",
     title: "Mail Us",
-    value: "info@example.com",
+    value: "dm.propertiees@gmail.com",
+    href: "mailto:dm.propertiees@gmail.com",
   },
-];
-
-const socialLinks = [
-  { icon: "fa-facebook-f", href: "#" },
-  { icon: "fa-instagram", href: "https://www.instagram.com/_dmconstruction_" },
-  { icon: "fa-linkedin-in", href: "#" },
 ];
 
 type NewsletterFormValues = {
@@ -140,7 +136,15 @@ export default function SiteFooter() {
                   </span>
                   <div>
                     <p className="text-[20px] font-bold leading-tight">{item.title}</p>
-                    <p className="mt-1 text-[18px] text-white/90">{item.value}</p>
+                    <p className="mt-1 text-[18px] text-white/90">
+                      {item.href ? (
+                        <a href={item.href} className="transition hover:text-[var(--primary-color)]">
+                          {item.value}
+                        </a>
+                      ) : (
+                        item.value
+                      )}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -151,23 +155,21 @@ export default function SiteFooter() {
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/20 pt-6 md:flex-row">
           <p className="text-[17px] text-white/90">
             &copy; Copyright 2026{" "}
-            <span className="text-[var(--primary-color)]">StratEdge Solutions</span>{" "}
+            <span className="text-[var(--primary-color)]">DM Construction</span>{" "}
             All Rights Reserved.
           </p>
 
-          <div className="flex items-center gap-3">
-            {socialLinks.map((item) => (
-              <Link
-                key={item.icon}
-                href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--secondary-color)] transition hover:bg-[var(--primary-color)] hover:text-white"
-              >
-                <i className={`fa-brands ${item.icon}`} />
-              </Link>
-            ))}
-          </div>
+          <p className="text-[17px] text-white/90">
+            Powered by{" "}
+            <Link
+              href="https://aswindhas.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[linear-gradient(135deg,_#fb071ee0,_#8e44ad)] bg-clip-text text-transparent"
+            >
+              StratEdge Solutions
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
