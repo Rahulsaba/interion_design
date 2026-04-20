@@ -151,7 +151,7 @@ export default function SiteFooter() {
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/20 pt-6 md:flex-row">
           <p className="text-[17px] text-white/90">
             &copy; Copyright 2026{" "}
-            <span className="text-[var(--primary-color)]">dmconstruction</span>{" "}
+            <span className="text-[var(--primary-color)]">StratEdge Solutions</span>{" "}
             All Rights Reserved.
           </p>
 
