@@ -8,7 +8,7 @@ import { useState } from "react";
 const slides = [
   {
     id: 1,
-    image: "/sliders_image/main_bg_1.webp",
+    image: "/sliders_image/main_bg_2.webp",
     eyebrow: "DM CONSTRUCTION",
     title: "Smart Construction for Modern Spaces",
     description:
@@ -16,7 +16,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/sliders_image/main_bg_2.webp",
+    image: "/sliders_image/main_bg_1.webp",
     eyebrow: "DM CONSTRUCTION",
     title: " Luxury Interior Design by DM Construction",
     description:
