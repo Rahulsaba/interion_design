@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -20,6 +20,14 @@ const whatsappLink =
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    window.dispatchEvent(
+      new CustomEvent("mobile-menu-state-change", {
+        detail: { isOpen: isMobileMenuOpen },
+      }),
+    );
+  }, [isMobileMenuOpen]);
 
   const isActiveLink = (href: string) => {
     if (href === "/") return pathname === "/";
