@@ -159,17 +159,23 @@ export default function SiteFooter() {
             All Rights Reserved.
           </p>
 
-          <p className="text-[17px] text-white/90">
-            Powered by{" "}
+          <div className="flex flex-wrap items-center justify-center gap-2 text-[17px] text-white/90 md:justify-end">
+            <span>Powered by</span>
             <Link
               href="https://aswindhas.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[linear-gradient(135deg,_#fb071ee0,_#8e44ad)] bg-clip-text text-transparent"
+              className="inline-flex rounded-md bg-white px-2 py-1.5 transition hover:opacity-95"
             >
-              StratEdge Solutions
+              <Image
+                src="/images/company_logo/logo.png"
+                alt="StratEdge Solutions"
+                width={180}
+                height={48}
+                className="h-8 w-auto max-w-[200px] object-contain object-left"
+              />
             </Link>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
