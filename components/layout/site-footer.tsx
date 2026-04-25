@@ -153,22 +153,22 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-white/20 pt-6 md:flex-row">
-          <p className="text-[17px] text-white/90">
+          <p className="text-base text-white/90">
             &copy; Copyright 2026{" "}
             <span className="text-[var(--primary-color)]">DM Construction</span>{" "}
             All Rights Reserved.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-[17px] text-white/90 md:justify-end">
-            <span>Powered by</span>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-base relative text-white/90 md:justify-end">
+            <span className="absolute left-[-80px] ">Powered by</span>
             <Link
               href="https://aswindhas.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex rounded-md bg-white px-2 py-1.5 transition hover:opacity-95"
+              className="inline-flex rounded-md   py-1.5 transition hover:opacity-95"
             >
               <Image
-                src="/images/company_logo/logo.png"
+                src="/images/company_logo/white_logo.png"
                 alt="StratEdge Solutions"
                 width={180}
                 height={48}
