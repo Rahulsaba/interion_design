@@ -26,14 +26,22 @@ const services = [
     image: "/images/services/service-3.webp",
     iconClass: "fa-solid fa-paint-roller",
   },
-  // {
-  //   id: "04",
-  //   title: "Construction",
-  //   description:
-  //     "There are many variations of passages have available but the majority have suffered some form by injected humour words believable.",
-  //   image: "/images/services/service-4.webp",
-  //   iconClass: "fa-solid fa-drafting-compass",
-  // },
+  {
+    id: "04",
+    title: "Elevation Design",
+    description:
+      "We execute fixes and total perfection with accuracy, providing sleek finishes, robust endurance, and refined building results.",
+    image: "/images/services/ele.webp",
+    iconClass: "fa-solid fa-map",
+  },
+  {
+    id: "05",
+    title: "Bridges",
+    description:
+      "Our experts repair and finish projects with expertise, offering smooth textures, strong reliability, and elegant construction endings.",
+    image: "/images/services/service-5.webp",
+    iconClass: "fa-solid fa-bridge",
+  },
 ];
 
 type ServiceSectionProps = {

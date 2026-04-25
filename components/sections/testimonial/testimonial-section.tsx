@@ -6,21 +6,21 @@ const testimonials = [
     name: "Daniel Porter",
     role: "Customer",
     image: "/images/testmonial/testmonial_1.webp",
-    text: "There are many variations passage available the majority have suffered of alteration in some form by the injected humour or randomised words which look even slightly believable.",
+    text: "This team provided a budget-friendly decor and building plan that stayed exactly on quote.",
   },
   {
     id: 2,
     name: "Ebony Swihart",
     role: "Customer",
     image: "/images/testmonial/testmonial_2.webp",
-    text: "There are many variations passage available the majority have suffered of alteration in some form by the injected humour or randomised words which look even slightly believable.",
+    text: "Finding a contractor with zero hidden contract fees is nearly impossible, but these guys delivered. ",
   },
   {
     id: 3,
     name: "Loreta Jones",
     role: "Customer",
     image: "/images/testmonial/testmonial_1.webp",
-    text: "There are many variations passage available the majority have suffered of alteration in some form by the injected humour or randomised words which look even slightly believable.",
+    text: "They offer cost-effective solutions without cutting any corners on quality.This is the best value for money.",
   },
 ];
 

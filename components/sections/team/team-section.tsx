@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: "Deenson ",
     role: "CEO & Founder",
-    image: "/images/teams/team_1.jpg",
+    image: "/images/teams/team_1.webp",
   },
  
 ];
